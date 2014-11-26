@@ -28,9 +28,4 @@ $(document).ready(function(){
     $('#getFocus').click(function(){
         $('#getInTouch ').find('input').focus();
     })
-
-    // jiwan
-    // $('.menu-icon').click(function(){
-    //     $( "nav" ).addClass( "top-bar expanded" );
-    // })
 });
