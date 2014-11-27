@@ -29,8 +29,8 @@
                 <section class="top-bar-section ">
                     <ul class="right desktopNav">
                         <!--<li><a href="#getFree">Free landing page</a></li>-->
-                        <li><a href="/case-studies">Case studies</a></li>
-                        <li><a href="/about">About</a></li>
+                        <li>{{#link-to 'Case-studies'}}Case studies{{/link-to}}</li>
+                        <li>{{#link-to 'about'}}About{{/link-to}}</li>
                         <li>{{#link-to 'getintouch'}}Get in touch{{/link-to}}</li>
                         <li><a href="http://delighthq.com">Customer Login</a></li>
                         <ul class="sub-category">
@@ -72,258 +72,527 @@
 </script>
 
 
-<!-- ideation section -->
-  <script type="text/x-handlebars" id="ideationSection">
-        <section id="ideation" class="ideationSection ">
-                  <h1 class="gamma">Brainstorm and ideate together</h1>
-                  <h2 class="epsilon">Lets work together to clearly define your idea</h2>
+<script type="text/x-handlebars" id="ideationSection">
+      <!-- ideation section -->
+          <section id="ideation" class="ideationSection ">
+                    <h1 class="gamma">Brainstorm and ideate together</h1>
+                    <h2 class="epsilon">Lets work together to clearly define your idea</h2>
+                    <div class="platform">
+                        <div class="row">
+                            <div class="large-9 columns">
+                                <div class="sectionInfo ">
+                                    <h3 class="delta text-left">The Good Bits</h3>
+                                    <p class="text-left">
+                                      We get started by signing an NDA, and rolling up our sleeves with you. What is your problem statement? What are the existing solutions in the market? How do you stand out and acquire users? Our goal is to combine our expertise in business, design and technology along with our maniacal focus on startups to answer these questions together and flesh out your idea successfully.
+                                  </p>
+                              </div>
+                          </div>
+                          <div class="large-15  columns noPaddingRight">
+                            <img src="images/launchyard_ideation.png" class="ideationImage" alt="Launchyard ideation" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+  <!-- ideation section ends here -->
+
+  <!--platform section starts here-->
+        <section id="platform" class="platformSection">
+                    <h1 class="gamma">Design and develop with us</h1>
+                    <h2 class="epsilon">Our designers and developers are experienced in all the major technology platforms</h2>
+                    <div class="row">
+                        <div class="platform recommend">
+                            <ul class="large-block-grid-3">
+                                <li class="active">
+                                    <div class="platformIcon"><i class="icon-laptop "></i></div>
+                                    <h1 class="epsilon">Web</h1>
+                                    <div class="platformContent"><p>Despite the rise of mobile, a web app is still a great starting point for many ideas. We have an established track record in building robust, cross-browser web applications quickly and cleanly to validate your idea.</p></div>
+                                </li>
+                                <li>
+                                    <div class="platformIcon"><i class="icon-cog"></i></div>
+                                    <h1 class="epsilon">iOS</h1>
+                                    <div class="platformContent"><p>iOS is an established mobile platform and often a mobile first strategy for your startup makes sense. We have strong capabilities in objective C, native app store payments and iOS UX/UI to serve this segment.</p></div>
+                                </li>
+                                <li>
+                                    <div class="platformIcon"><i class="icon-android"></i></div>
+                                    <h1 class="epsilon">Android</h1>
+                                    <div class="platformContent"><p>Android is one of the fastest growing mobile platforms catching up with iOS. Honestly, we haven't built any Android products yet but we are proficient in the relevant technologies and would love to dig into it.<p></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--<div class="navPoint">-->
+                    <!--<span class="moveDown"> <a href="#feature"><i class="icon-circle"></i><i class="icon-circle"></i><i class="icon-circle"></i></a> </span>-->
+                    <!--</div>-->
+                    </section>
+  <!--platform section starts here-->
+
+  <!-- feature section -->
+      <section id="feature" class="featureSection getHeight">
+                  <h1 class="gamma">Our value system for startups</h1>
+                  <h2 class="epsilon">We emphasize precise feature development, quick iteration and accuracy in time and budget</h2>
                   <div class="platform">
                       <div class="row">
                           <div class="large-9 columns">
                               <div class="sectionInfo ">
                                   <h3 class="delta text-left">The Good Bits</h3>
                                   <p class="text-left">
-                                    We get started by signing an NDA, and rolling up our sleeves with you. What is your problem statement? What are the existing solutions in the market? How do you stand out and acquire users? Our goal is to combine our expertise in business, design and technology along with our maniacal focus on startups to answer these questions together and flesh out your idea successfully.
+                                    Being a startup founder is hard. We understand you are trying to validate an idea with limited resources. We strongly believe in bringing transparency at every layer of development so you are in control of your time and budget. 
                                 </p>
                             </div>
                         </div>
-                        <div class="large-15  columns noPaddingRight">
-                          <img src="images/launchyard_ideation.png" class="ideationImage" alt="Launchyard ideation" />
+                        <div class="large-15 columns noPaddingRight">
+                          <img src="images/feature1.jpg" class="featureImage right" alt="Launchyard features"/>
                       </div>
                   </div>
               </div>
-          </section>
-  </script>
-<!-- ideation section ends here -->
+      </section>
+  <!-- end of feature section -->
 
-<!--platform section starts here-->
-  <script type="text/x-handlebars" id="platformSection">
-      <section id="platform" class="platformSection">
-                  <h1 class="gamma">Design and develop with us</h1>
-                  <h2 class="epsilon">Our designers and developers are experienced in all the major technology platforms</h2>
-                  <div class="row">
-                      <div class="platform recommend">
-                          <ul class="large-block-grid-3">
-                              <li class="active">
-                                  <div class="platformIcon"><i class="icon-laptop "></i></div>
-                                  <h1 class="epsilon">Web</h1>
-                                  <div class="platformContent"><p>Despite the rise of mobile, a web app is still a great starting point for many ideas. We have an established track record in building robust, cross-browser web applications quickly and cleanly to validate your idea.</p></div>
-                              </li>
-                              <li>
-                                  <div class="platformIcon"><i class="icon-cog"></i></div>
-                                  <h1 class="epsilon">iOS</h1>
-                                  <div class="platformContent"><p>iOS is an established mobile platform and often a mobile first strategy for your startup makes sense. We have strong capabilities in objective C, native app store payments and iOS UX/UI to serve this segment.</p></div>
-                              </li>
-                              <li>
-                                  <div class="platformIcon"><i class="icon-android"></i></div>
-                                  <h1 class="epsilon">Android</h1>
-                                  <div class="platformContent"><p>Android is one of the fastest growing mobile platforms catching up with iOS. Honestly, we haven't built any Android products yet but we are proficient in the relevant technologies and would love to dig into it.<p></div>
-                              </li>
-                          </ul>
-                      </div>
-                  </div>
-                  <!--<div class="navPoint">-->
-                  <!--<span class="moveDown"> <a href="#feature"><i class="icon-circle"></i><i class="icon-circle"></i><i class="icon-circle"></i></a> </span>-->
-                  <!--</div>-->
-                  </section>
-  </script>
-<!--platform section starts here-->
-
-<!-- feature section -->
-  <script type="text/x-handlebars" id="featureSection">
-    <section id="feature" class="featureSection getHeight">
-                <h1 class="gamma">Our value system for startups</h1>
-                <h2 class="epsilon">We emphasize precise feature development, quick iteration and accuracy in time and budget</h2>
-                <div class="platform">
-                    <div class="row">
-                        <div class="large-9 columns">
-                            <div class="sectionInfo ">
-                                <h3 class="delta text-left">The Good Bits</h3>
-                                <p class="text-left">
-                                  Being a startup founder is hard. We understand you are trying to validate an idea with limited resources. We strongly believe in bringing transparency at every layer of development so you are in control of your time and budget. 
-                              </p>
+  <!-- get in touch setiion -->
+                      <div id="getInTouch" class="row inviteBox">
+                          <div class="large-24 columns large-centered">
+                              <h2 class="epsilon">Let's get started with your product today.</h2>
+                              <div class="large-12  columns large-centered">
+                                  <div class="row collapse">
+                                      <div class="large-24 error columns gettouch-field">
+                                          <small class="error" id="error-email-3" style="display: none;">Please type a valid email address</small>
+                                          <div class="large-18  columns ">
+                                              <input class="emailField" type="text" placeholder="Your Email address" id="email-3">
+                                          </div>
+                                          <div class="large-6 small-24 small-centered large-uncentered columns">
+                                              <a href="#" class="button postfix radius get-in-touch" for="email-3">Get in touch</a>
+                                          </div>    
+                                      </div>
+                                  </div>
+                              </div>
+                              <h2 class="epsilon sales-text">Send us an email at <a href="mailto:sales@launchyard.com">sales@launchyard.com</a> or you can just get started by filling this <a href="https://launchyard.wufoo.com/forms/get-in-touch-with-the-launchyard-technical-team/">tiny form</a>.</h2> 
                           </div>
                       </div>
-                      <div class="large-15 columns noPaddingRight">
-                        <img src="images/feature1.jpg" class="featureImage right" alt="Launchyard features"/>
+  <!--   end get in touch -->
+
+  <!-- clientSection -->
+
+      <section class="clientSection" id="work">
+                  <h1 class="beta">Happy Founders</h1>
+                  <h2 class="epsilon">Don't just listen to us. Listen to others as well</h2>
+                  <div class="clientList">
+                  <div class="flexslider">
+                      <ul class="slides">
+                          <li>
+                                  <div class="clientInfo">
+                                      <div class="clientImage"><img src="images/ricardhy.jpg" alt=""/></div>
+                                      <div class="clientFeedback">
+                                        <p>Very professional, friendly and a breath of fresh air. After having many bad experiences working with various freelancers and dev shops, Launchyard made me feel confident in their ability to execute. They worked in a timely fashion, proved to be flexible, and were great communicators.</p>
+                                        <div class="text-right">
+                                          <small class="text-right">— Ricardhy Grandoit, Founder, <a href="http://sb.launchyard.com/" target="_blank"> Stagebandit</a> </small>
+                                      </div>
+                                  </div>
+                          </li>
+                          <li>
+                              <div class="clientInfo">
+                                  <div class="clientImage"><img src="images/andrew.jpg" alt=""/></div>
+                                  <div class="clientFeedback">
+                                      <p>I consider the LY team to be my co-founders because they treated my startup like it was their own. The thing that makes working with LaunchYard such a delight is that they have a clear system to handle the entire project and the way they truly value their clients. This creates the perfect environment for awesome communication and shipping on time.</p>
+
+                                      <div class="text-right">
+                                          <small class="text-right">— Andrew Kopke, Founder, <a href="http://thealbums.co/" target="_blank">The Albums</a> </small>
+                                      </div>
+                                  </div>
+                              </div>
+                          </li>
+                          <li>
+                              <div class="clientInfo">
+                                  <div class="clientImage"><img src="images/ehab.jpg" alt=""/></div>
+                                  <div class="clientFeedback">
+                                      <p> I had the good fortune of working with
+                                          the LY team, and can't say enough good
+                                          things about their technical talent and
+                                          follow-through. They are super responsive,
+                                          detail oriented and were able to clearly communicate problems when they arise. They understand the big picture, and have the rare ability to get things done.</p>
+                                          <div class="text-right">
+                                              <small class="text-right">— Ehab Bandar, Founder, <a href="https://itunes.apple.com/us/app/foodfolio-spark-get-organized/id766268525?ls=1&mt=8" target="_blank">Foodfolio</a> </small>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </li>
+                              <li>
+                                  <div class="clientInfo">
+                                      <div class="clientImage"><img src="images/Matthew-Goos.jpg" alt=""/></div>
+                                      <div class="clientFeedback">
+                                        <p>We shared our vision of what we needed and LY was able to take this information and come back with a plan and estimate to launch. The team is very solid technically. Their code is concise and easy to read. They quickly responded to updated/changing requirements. We had clear insight into the state of the project through the process. The site looks great and we have had really great feedback from our customers.</p>
+                                        <div class="text-right">
+                                          <small class="text-right">— Matthew Goos, Co-founder, <a href="http://picquity:PictureThis$$@picquity.com" target="_blank">Picquity</a> </small>
+                                      </div>
+                                  </div>
+                              </li>
+                              <!--<a href=""><small>want to see more</small></a>-->
+                          </ul>
+                          </div>
+                          <h6 class="text-center text-decoration" style="margin-top:3em"><a href="/case-studies"> Read through the case studies</i></a></h6>
+                      </div>
+          </section> 
+  <!-- clientSection -->
+
+  <!-- free landing page-->
+      <section id="getFree" class="freeLandingPage getHeight">
+                      <h1 class="gamma">Get a free landing page</h1>
+                      <h2 class="epsilon">We'll get you started instantaneously with a powerful launch page FOR FREE</h2>
+                      <div class="platform">
+                          <div class="row">
+                              <div class="large-11 columns">
+                                  <div class="sectionInfo ">
+                                      <p><i class="icon-quote-left quote"></i> Setting up our LaunchYard landing page was incredibly simple. We were able to easily customize the design to fit exactly what we wanted. It only took minutes from start to finish. The page ending up looking great and functioned perfectly.</p>
+                                      <p class="text-right author">— Tuyen Vo,<a href="http://linepeek.com" target="_blank"> Linepeek</a></p>
+                                  </div>
+                          </div>
+                          <div class="large-12 columns">
+                              <img src="images/free_page.png" alt=""/>
+                          </div>
+                      </div>
+                      </div>
+                      <div id="getInTouch" class="row inviteBox">
+                          <div class="large-24 columns large-centered">
+                              <h2 class="epsilon">Let's get started with your product today.</h2>
+                              <div class="large-12  columns large-centered">
+                                  <div class="row collapse">
+                                      <div class="large-24 error columns gettouch-field">
+                                          <small class="error" id="error-email-3" style="display: none;">Please type a valid email address</small>
+                                          <div class="large-18  columns ">
+                                              <input class="emailField" type="text" placeholder="Your Email address" id="email-3">
+                                          </div>
+                                          <div class="large-6 small-24 small-centered large-uncentered columns">
+                                              <a href="#" class="button postfix radius get-in-touch" for="email-3">Get in touch</a>
+                                          </div>    
+                                      </div>
+                                  </div>
+                              </div>
+                              <h2 class="epsilon sales-text">Send us an email at <a href="mailto:sales@launchyard.com">sales@launchyard.com</a> or you can just get started by filling this <a href="https://launchyard.wufoo.com/forms/get-in-touch-with-the-launchyard-technical-team/">tiny form</a>.</h2> 
+                          </div>
+                      </div>
+          </section>
+  <!--free landing page ends here-->
+
+  <!--achivement section-->
+      <section id="" class="achievementSection">
+                  <div class="large-18 columns large-centered">
+                      <h1 class="gamma">We love statistics</h1>
+                          <ul class="small-block-grid-2 large-block-grid-4 achieve-block-body">
+                            <li><div class="circle"><h4><i class="icon-code"></i> </h4></div>
+                              <span class="text-center achiev-num">1.5M</span>
+                              <p class="text-center achiev-text">LINES OF CODE</p>
+                            </li>
+                            <li><div class="circle"><h4><i class="icon-user"></i></h4></div>
+                              <span class="text-center achiev-num">13</span>
+                              <p class="text-center achiev-text">HAPPY CLIENTS</p>
+                            </li>  
+                            <li><div class="circle"><h4><i class="icon-rocket"></i></h4></div>
+                              <span class="text-center achiev-num">10</span>
+                              <p class="text-center achiev-text">PROJECTS DONE</p>
+                            </li>
+                            <li><div class="circle"><h4><i class="icon-coffee"></i></h4></div>
+                              <span class="text-center achiev-num">~2K</span>
+                              <p class="text-center achiev-text">CUPS OF COFFEE</p>
+                            </li>
+                        </ul>
+                  </div>
+                    <footer>
+                      <div class="row">
+                          <div class="large-8 columns large-centered">
+                              <ul class="large-block-grid-4 small-block-grid-2">
+                                  <li><a href="http://blog.launchyard.com/" target="_blank">Blog</a></li>
+                                  <!--<li><a href="/jobs">Jobs</a></li>-->
+                                  <li><a href="mailto:hello@launchyard.com" title="Send mail">Email Us</a></li>
+                                  <li><a href="https://twitter.com/launchyard" target="_blank" title="Follow us">Twitter</a></li>
+                                  <li><a href="https://www.facebook.com/Launchyard" target="_blank" title="Like us">Facebook</a></li>
+                                  <!--<li><a href="#">Google+</a></li>-->
+                              </ul>
+                          </div>
+                          <div class="large-24 columns text-center">
+                              <small>A <a href="http://kamelotkapital.com" target="_blank">Kamelot Kapital</a> backed company.</small>
+                          </div>
+                      </div>
+                  </footer>
+          </section> 
+  <!--achivement section ends here-->
+</script>
+
+<!--case-stidies-->
+  <script type="text/x-handlebars" id="Case-studies">
+    <div class="content">
+     <div class="casestudies-bg">
+       <div class="large-24 columns case-landing-body">
+                   <!--<h3 class="case-studies-title text-center">Read through our <span class="bold-text">case studies</span> with some of the most <br>
+                   innovative enterprises and startups<h3><-->
+                   <h3 class="case-studies-title text-center">Learn how we help <br>entrepreneurs build their products.<h3>
+
+                    <div class="large-24 columns center-image">
+                     <div class="large-11 large-centered columns">
+                      <div class="center-images">
+                        <img src="images/case_study1.png">
+                      </div>
                     </div>
+                  </div>
+                  <div class="clear"></div>
+                  <div class="large-6 large-centered columns founder-container">
+                   <div class="founder-body">
+                     <div class="border-circle left-cir"></div>
+                     <div class="border-circle right-cir"></div>
+                   </div>
+                   <div class="found-img">
+                     <ul class="inline-list">
+                       <li><img src="images/andrew.jpg" alt=""/></li>
+                       <li><img src="images/Matthew-Goos.jpg" alt=""/></li>
+                     </ul>
+                   </div>
+                 </div>
+               </div>
+               <p class="text-center down-arrow">
+                <a class="jumper bt-link-arrow" href="#about"><i class="icon-chevron-down"></i></a>
+              </p>
+            </div>
+            <section id="about">
+             <div class="row">
+              <div class="large-24 columns">
+                <div class="obj-anima hover-right">
+                  <div class="casestudy-content case-thealbums b1">
+                    <h3 class="album-text">The Albums</h3>
+                    <div class="casestudy-content-body">
+                      <h4 class="white-text">the challenge</h4>
+                      <p class="white-text">The Albums founders wanted to launch a responsive minimum viable product fast that worked right away on major platforms - including mobile, tablets and web.</p>
+                      <h4 class="white-text">the Launchyard solution</h4>
+                      <p class="white-text">We settled on Zurb Foundation which is a responsive front-end framework that allowed the application to work seamlessly across different platforms. We focused on tight release cycles with smaller feature sets, allowing them to launch quickly and iterate. 
+                      </p>
+                      <p class="right text-center">
+                        <a href="/case-studies/albums" class="button success radius btn-green ">READ CASE STUDY</a>
+                      </p>
+                    </div>
+                    <div class="b2 album-bg-case"></div>
+                  </div>
+                </div>
+                <div class="obj-anima hover-right">
+                  <div class="casestudy-content case-picquity b1">
+                    <h3 class="picquity-text">Picquity</h3>
+                    <div class="casestudy-content-body">
+                      <h4 class="white-text">the challenge</h4>
+                      <p class="white-text">Picquity is an image centric web application, and the challenge was to manage massive image processing intensive operations (for instance: grabbing images from different websites, fingerprinting them and matching against a massive list of online images), store and access it on demand.</p>
+                      <h4 class="white-text">the Launchyard solution</h4>
+                      <p class="white-text">We went to work leveraging a non-sql database (Mongodb) to solve the unstructured data problem and identified robust solutions that we could implement for queuing and processing the images asynchronously. Our solution allowed them to launch their product with the sophisticated functionality they required relatively quickly. 
+                      </p>
+                      <p class="right text-center">
+                        <a href="/case-studies/picquity" class="button success radius btn-pink ">READ CASE STUDY</a>
+                      </p>
+                    </div>
+                    <div class="b2 picquity-bg-case"></div>
+                  </div>
+                </div>
+                <!--<div class="obj-anima hover-right">
+                  <div class="casestudy-content case-stagebandit b1">
+                    <h3 class="stagebandit-text">Stagebandit</h3>
+                    <div class="casestudy-content-body">
+                      <h4 class="white-text">the challenge</h4>
+                      <p class="white-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.</p>
+                      <h4 class="white-text">the Launchyard solution</h4>
+                      <p class="white-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled. 
+                      </p>
+                      <p class="right text-center">
+                        <a href="/case-studies/stagebandit" class="button success radius btn-black ">READ CASE STUDY</a>
+                      </p>
+                    </div>
+                    <div class="b2 stagebandit-bg-case"></div>
+                  </div>
+                </div>-->
+              </div>
+            </div>
+          </section>
+          <footer>
+            <div class="row">
+              <div class="large-8 columns large-centered">
+                <ul class="large-block-grid-4 small-block-grid-2 footer-links">
+                  <li><a href="http://blog.launchyard.com/" target="_blank">Blog</a></li>
+                  <!--<li><a href="/jobs">Jobs</a></li>-->
+                  <li><a href="mailto:hello@launchyard.com" title="Send mail">Email Us</a></li>
+                  <li><a href="https://twitter.com/launchyard" target="_blank" title="Follow us">Twitter</a></li>
+                  <li><a href="https://www.facebook.com/Launchyard" target="_blank" title="Like us">Facebook</a></li>
+                  <!--<li><a href="#">Google+</a></li>-->
+                </ul>
+              </div>
+              <div class="large-24 columns text-center">
+                <small>A <a href="http://www.linkedin.com/company/kamelot-kapital-pte-ltd" target="_blank">Kamelot Kapital</a> backed company.</small>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+  </script>
+<!--/case Studies-->
+
+<!--about-->
+  <script type="text/x-handlebars" id="about">
+    <div class="content">
+        <section class="landingSection aboutHeader " >
+            <h1 class="about_heading">We are a technical partner to startups.</h1>
+            <h3 class="delta text-center">We have a proven track record in web and mobile development, love open source technologies and solutions that launch quickly and scale painlessly.</h3>
+        </section>
+        <section id="scrollMenu" class="selectTab text-center ">
+            <a href="#about" class="about" data-scroll="top">Who we are</a>
+            <a href="#faq" class="faqsection_tab" data-scroll="products">FAQ</a>
+            <a href="#location" class="location" data-scroll="contact">Where we are</a>
+        </section>
+        <div class="wrapper">
+            <section id="about" class="aboutSection" data-anchor="top">
+                <h1 class="gamma">People @ LaunchYard</h1>
+                <div class="row">
+                    <div class="large-24 columns">
+                        <article class="memberBox left">
+                            <div class="large-12 columns">
+                                <div class="founderImage"><img src="images/atif-haider.jpg" alt=""/></div>
+                                <div class="atif right ">
+                                    <h1 class="epsilon">Atif Haider <small>Co-founder</small><span class="link" ><a href="http://www.linkedin.com/in/atifh" target="_blank"><i class="icon-circle-arrow-right"></i></a></span> </h1>
+                                    <p>Before starting LaunchYard, Atif was an early employee at Cleartrip as a Lisp programmer writing code for the flight search algorithms. He was part of the founding team at oCricket. Although being a back-end programmer, he acquired a keen sense of design while working at Studio March. </p>
+                                </div>
+                            </div>
+                            <div class="large-12 columns">
+                                <div class="founderImage"><img src="images/kartik-kumaramangalam.jpg" alt=""/></div>
+                                <div class="kartik ">
+                                    <h1 class="epsilon">Kartik Kumaramangalam  <small>Co-founder</small><span class="link" ><a href="http://www.linkedin.com/in/kumaramangalam" target="_blank"><i class="icon-circle-arrow-right"></i></a></span> </h1>
+                                    <p>Kartik was previously a Fellow at MIT researching innovation. He has worked with multiple software startups in his career starting with WebEx where he was an early employee writing C++ code for switching algorithms. He has also worked at Boston Consulting Group as a strategy consultant.</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <h1 class="gamma">Our core team</h1>
+                <h1 class="epsilon">Designers and Developers </h1>
+                <div class="row">
+                    <div class="large-24 columns">
+                        <article class="memberBox">
+                            <div class="teamList large-18 columns large-centered">
+                                <ul class="small-block-grid-2 large-block-grid-3">
+                                    <li>
+                                        <div class="bharath"></div>
+                                        <h1 class="epsilon">Bharat Hegde</h1>
+                                        <p>Front-end Developer</p>
+                                    </li>
+                                    <li>
+                                        <div class="naveen"></div>
+                                        <h1 class="epsilon">Naveen Yadav</h1>
+                                        <p>Polyglot Programmer</p>
+                                    </li>
+                                    <li>
+                                        <div class="Vivek"></div>
+                                        <h1 class="epsilon">Vivek Pathania</h1>
+                                        <p>iOS Engineer</p>
+                                    </li>
+                                    <li>
+                                        <div class="Shawn"></div>
+                                        <h1 class="epsilon">Shawn Davis</h1>
+                                        <p>Polyglot Programmer</p>
+                                    </li>
+                                    <li>
+                                        <div class="lucija"></div>
+                                        <h1 class="epsilon">Lucija Matic</h1>
+                                        <p>Business Development</p>
+                                    </li>
+                                    <li>
+                                        <div class="you">
+                                            <a href="mailto:work@launchyard.com?subject=Looking for an opportunity to work at LY.">
+                                                <img src="images/u_team.png"> </a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+                <section id="faq" class="faqsection" data-anchor="products">
+                    <div class="row">
+                        <h2>Frequently asked questions</h2>
+                        <div class="large-12 columns pull-left">
+                            <div class="faqwrapper">
+                                <h4>How much time and money will it take to launch my idea?</h4>
+                                <p>We charge for monthly releases and the development time depends on the technical requirement for your idea. Usually, we aim to build a viable launch product in a month.</p>
+                                <h4>How many developers & designers will I get to work on my idea?</h4>
+                                <p>Your team will consist of a backend and a front end developer supervised by a technical product manager keeping things on track.</p>
+                                <h4>My project is half developed and unfinished, can you help me out?</h4>
+                                <p>If the codebase is not in a good shape then we will prefer to re-write it. Sometimes, that’s cheaper and quicker. Let’s talk.</p>
+                                <h4>Do you work with existing startups?</h4>
+                                <p>Yes, we do. We offer tailor made teams using specific technologies for existing startups. Get in touch with us, so we can understand your tech stack and how we can help you scale affordably and efficiently.</p>
+
+                                <h4>I have a rough idea that I have been mulling over for some time. What should I do?</h4>
+                                <p>Signup with us and we will brainstorm together. All you need is an idea and commitment to iterate and succeed.</p>
+                                <h4> What’s your track record?</h4>
+                                <p>As a company, we’ve been building web products since Jan 2013 in ideas as diverse as food, internet security, dedicated marketplaces and photo sharing. As a team, we’ve been building products since 1999 with a successful track record in web and mobile technologies.</p>
+                            </div>
+                        </div>
+                        <div class="large-12 columns pull-left">
+                            <div class="faqwrapper">
+                              <h4>I don’t have enough funds to invest in the beginning, do you consider taking equity?</h4>
+                              <p>We do not take equity. It’s simpler for all concerned in the long run.</p>
+
+                              <h4>Is my idea safe in your hands?</h4>
+                              <p>100%. We’re incorporated out of Singapore for it’s great track record for transparency. We use NDAs and a secure platform to communicate on ideas, specifications, code and progress.</p>
+                              <h4>What will happen after launching my idea?</h4>
+                              <p>We will continue to support you on either a development or maintenance basis. </p>
+                              <h4>What makes you special?</h4>
+                              <p>Our startup value system understands the value of time and money to an entrepreneur and emphasizes precise feature development, quick iteration and accuracy of time and budget. </p>
+                              <h4>What technologies do you use?</h4>
+                              <p>We use cutting edge technologies like Python, Django/Flask/Tornado, Mysql/Mongodb, Scala, Lift, Clojure, Javascript, Backbone js.</p>
+                              <h4>Are you nice guys? </h4>
+                              <p>Well, guys and gals. And yes, we are! Are you? :)</p>
+                              <h4>Got it, what next? </h4>
+                              <p>Get in touch at <a href="mailto:hello@launchyard.com">hello@launchyard.com</a> or by giving us your email address <a href="http://launchyard.com/#getInTouch">here</a> and we will contact you.</p>
+                          </div>
+                      </div>
+                  </div>
+              </section>
+              <div id="getInTouch" class="row inviteBox">
+                <div class="large-24 columns large-centered">
+                    <h2 class="epsilon">Let's get started with your product today.</h2>
+                    <div class="large-12  columns large-centered">
+                        <div class="row collapse">
+                            <div class="large-24 error columns gettouch-field">
+                                <small class="error" id="error-email-3" style="display: none;">Please type a valid email address</small>
+                                <div class="large-18  columns ">
+                                    <input class="emailField" type="text" placeholder="Your Email address" id="email-3">
+                                </div>
+                                <div class="large-6 small-24 small-centered large-uncentered columns">
+                                    <a href="#" class="button postfix radius get-in-touch" for="email-3">Get in touch</a>
+                                </div>    
+                            </div>
+                        </div>
+                    </div>
+            <h2 class="epsilon sales-text">Send us an email at <a href="mailto:sales@launchyard.com">sales@launchyard.com</a><br/> or you can just get started by filling this <a href="https://launchyard.wufoo.com/forms/get-in-touch-with-the-launchyard-technical-team/">tiny form</a>.</h2>
                 </div>
             </div>
-    </section>
-  </script>
-<!-- end of feature section -->
+            <section id="location" class="locationSection" data-anchor="contact">
+                <h1 class="gamma">Singapore, Bangalore, London</h1>
+                <h2 class="epsilon">We love Singapore for its accountability, Bangalore for its technology talent, and London for its global reach.</h2>
+                <ul class="small-block-grid-1 large-block-grid-3">
+                    <li>
+                        <div class="locationDetail">
+                            <h1 class="epsilon">INDIA</h1>
+                            <div class="map"><a href="http://goo.gl/maps/eOQhG" target="_blank"><img src="images/blore_map.jpg"></a></div>
+                            <address>#3274, 11th Main, HAL 2nd Stage, Indiranagar Bangalore - 560078</address>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="locationDetail">
+                            <h1 class="epsilon">SINGAPORE</h1>
+                            <div class="map"><a href="http://goo.gl/maps/9Kdgh"  target="_blank"><img src="images/singapore_map.jpg"></a></div>
+                            <address>96, Robinson Road, 16-01, SIF Building, Singapore - 068899</address>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="locationDetail">
+                            <h1 class="epsilon">UNITED KINGDOM</h1>
+                            <div class="map"><a href="http://goo.gl/maps/5eh49"  target="_blank"><img src="images/london_map.jpg"></a></div>
+                            <address>93-99 Goswell Road Greater EC1V 7EY, </br>London, UK</address>
+                        </div>
+                    </li>
+                </ul>
 
-<!-- get in touch setiion -->
-  <script type="text/x-handlebars" id="getintouch">
-      <section id="getFree" class="freeLandingPage getHeight">
-                    <h1 class="gamma">Get a free landing page</h1>
-                    <h2 class="epsilon">We'll get you started instantaneously with a powerful launch page FOR FREE</h2>
-                    <div class="platform">
-                        <div class="row">
-                            <div class="large-11 columns">
-                                <div class="sectionInfo ">
-                                    <p><i class="icon-quote-left quote"></i> Setting up our LaunchYard landing page was incredibly simple. We were able to easily customize the design to fit exactly what we wanted. It only took minutes from start to finish. The page ending up looking great and functioned perfectly.</p>
-                                    <p class="text-right author">— Tuyen Vo,<a href="http://linepeek.com" target="_blank"> Linepeek</a></p>
-                                </div>
-                        </div>
-                        <div class="large-12 columns">
-                            <img src="images/free_page.png" alt=""/>
-                        </div>
-                    </div>
-                    </div>
-                    <div id="getInTouch" class="row inviteBox">
-                        <div class="large-24 columns large-centered">
-                            <h2 class="epsilon">Let's get started with your product today.</h2>
-                            <div class="large-12  columns large-centered">
-                                <div class="row collapse">
-                                    <div class="large-24 error columns gettouch-field">
-                                        <small class="error" id="error-email-3" style="display: none;">Please type a valid email address</small>
-                                        <div class="large-18  columns ">
-                                            <input class="emailField" type="text" placeholder="Your Email address" id="email-3">
-                                        </div>
-                                        <div class="large-6 small-24 small-centered large-uncentered columns">
-                                            <a href="#" class="button postfix radius get-in-touch" for="email-3">Get in touch</a>
-                                        </div>    
-                                    </div>
-                                </div>
-                            </div>
-                            <h2 class="epsilon sales-text">Send us an email at <a href="mailto:sales@launchyard.com">sales@launchyard.com</a> or you can just get started by filling this <a href="https://launchyard.wufoo.com/forms/get-in-touch-with-the-launchyard-technical-team/">tiny form</a>.</h2> 
-                        </div>
-                    </div>
-        </section>
-  </script>
-<!--   end get in touch -->
-
-<!-- clientSection -->
-  <script type="text/x-handlebars" id="clientSection">
-    <section class="clientSection" id="work">
-                <h1 class="beta">Happy Founders</h1>
-                <h2 class="epsilon">Don't just listen to us. Listen to others as well</h2>
-                <div class="clientList">
-                <div class="flexslider">
-                    <ul class="slides">
-                        <li>
-                                <div class="clientInfo">
-                                    <div class="clientImage"><img src="images/ricardhy.jpg" alt=""/></div>
-                                    <div class="clientFeedback">
-                                      <p>Very professional, friendly and a breath of fresh air. After having many bad experiences working with various freelancers and dev shops, Launchyard made me feel confident in their ability to execute. They worked in a timely fashion, proved to be flexible, and were great communicators.</p>
-                                      <div class="text-right">
-                                        <small class="text-right">— Ricardhy Grandoit, Founder, <a href="http://sb.launchyard.com/" target="_blank"> Stagebandit</a> </small>
-                                    </div>
-                                </div>
-                        </li>
-                        <li>
-                            <div class="clientInfo">
-                                <div class="clientImage"><img src="images/andrew.jpg" alt=""/></div>
-                                <div class="clientFeedback">
-                                    <p>I consider the LY team to be my co-founders because they treated my startup like it was their own. The thing that makes working with LaunchYard such a delight is that they have a clear system to handle the entire project and the way they truly value their clients. This creates the perfect environment for awesome communication and shipping on time.</p>
-
-                                    <div class="text-right">
-                                        <small class="text-right">— Andrew Kopke, Founder, <a href="http://thealbums.co/" target="_blank">The Albums</a> </small>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="clientInfo">
-                                <div class="clientImage"><img src="images/ehab.jpg" alt=""/></div>
-                                <div class="clientFeedback">
-                                    <p> I had the good fortune of working with
-                                        the LY team, and can't say enough good
-                                        things about their technical talent and
-                                        follow-through. They are super responsive,
-                                        detail oriented and were able to clearly communicate problems when they arise. They understand the big picture, and have the rare ability to get things done.</p>
-                                        <div class="text-right">
-                                            <small class="text-right">— Ehab Bandar, Founder, <a href="https://itunes.apple.com/us/app/foodfolio-spark-get-organized/id766268525?ls=1&mt=8" target="_blank">Foodfolio</a> </small>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="clientInfo">
-                                    <div class="clientImage"><img src="images/Matthew-Goos.jpg" alt=""/></div>
-                                    <div class="clientFeedback">
-                                      <p>We shared our vision of what we needed and LY was able to take this information and come back with a plan and estimate to launch. The team is very solid technically. Their code is concise and easy to read. They quickly responded to updated/changing requirements. We had clear insight into the state of the project through the process. The site looks great and we have had really great feedback from our customers.</p>
-                                      <div class="text-right">
-                                        <small class="text-right">— Matthew Goos, Co-founder, <a href="http://picquity:PictureThis$$@picquity.com" target="_blank">Picquity</a> </small>
-                                    </div>
-                                </div>
-                            </li>
-                            <!--<a href=""><small>want to see more</small></a>-->
-                        </ul>
-                        </div>
-                        <h6 class="text-center text-decoration" style="margin-top:3em"><a href="/case-studies"> Read through the case studies</i></a></h6>
-                    </div>
-        </section>
-  </script>
-<!-- clientSection -->
-
-<!-- free landing page-->
-  <script type="text/x-handlebars" id="freeLandingPage">
-    <section id="getFree" class="freeLandingPage getHeight">
-                    <h1 class="gamma">Get a free landing page</h1>
-                    <h2 class="epsilon">We'll get you started instantaneously with a powerful launch page FOR FREE</h2>
-                    <div class="platform">
-                        <div class="row">
-                            <div class="large-11 columns">
-                                <div class="sectionInfo ">
-                                    <p><i class="icon-quote-left quote"></i> Setting up our LaunchYard landing page was incredibly simple. We were able to easily customize the design to fit exactly what we wanted. It only took minutes from start to finish. The page ending up looking great and functioned perfectly.</p>
-                                    <p class="text-right author">— Tuyen Vo,<a href="http://linepeek.com" target="_blank"> Linepeek</a></p>
-                                </div>
-                        </div>
-                        <div class="large-12 columns">
-                            <img src="images/free_page.png" alt=""/>
-                        </div>
-                    </div>
-                    </div>
-                    <div id="getInTouch" class="row inviteBox">
-                        <div class="large-24 columns large-centered">
-                            <h2 class="epsilon">Let's get started with your product today.</h2>
-                            <div class="large-12  columns large-centered">
-                                <div class="row collapse">
-                                    <div class="large-24 error columns gettouch-field">
-                                        <small class="error" id="error-email-3" style="display: none;">Please type a valid email address</small>
-                                        <div class="large-18  columns ">
-                                            <input class="emailField" type="text" placeholder="Your Email address" id="email-3">
-                                        </div>
-                                        <div class="large-6 small-24 small-centered large-uncentered columns">
-                                            <a href="#" class="button postfix radius get-in-touch" for="email-3">Get in touch</a>
-                                        </div>    
-                                    </div>
-                                </div>
-                            </div>
-                            <h2 class="epsilon sales-text">Send us an email at <a href="mailto:sales@launchyard.com">sales@launchyard.com</a> or you can just get started by filling this <a href="https://launchyard.wufoo.com/forms/get-in-touch-with-the-launchyard-technical-team/">tiny form</a>.</h2> 
-                        </div>
-                    </div>
-        </section>
-  </script>
-<!--free landing page ends here-->
-
-<!--achivement section-->
-  <script type="text/x-handlebars" id="achievementSection">
-    <section id="" class="achievementSection">
-                <div class="large-18 columns large-centered">
-                    <h1 class="gamma">We love statistics</h1>
-                        <ul class="small-block-grid-2 large-block-grid-4 achieve-block-body">
-                          <li><div class="circle"><h4><i class="icon-code"></i> </h4></div>
-                            <span class="text-center achiev-num">1.5M</span>
-                            <p class="text-center achiev-text">LINES OF CODE</p>
-                          </li>
-                          <li><div class="circle"><h4><i class="icon-user"></i></h4></div>
-                            <span class="text-center achiev-num">13</span>
-                            <p class="text-center achiev-text">HAPPY CLIENTS</p>
-                          </li>  
-                          <li><div class="circle"><h4><i class="icon-rocket"></i></h4></div>
-                            <span class="text-center achiev-num">10</span>
-                            <p class="text-center achiev-text">PROJECTS DONE</p>
-                          </li>
-                          <li><div class="circle"><h4><i class="icon-coffee"></i></h4></div>
-                            <span class="text-center achiev-num">~2K</span>
-                            <p class="text-center achiev-text">CUPS OF COFFEE</p>
-                          </li>
-                      </ul>
-                </div>
-                  <footer>
+                <footer>
                     <div class="row">
                         <div class="large-8 columns large-centered">
                             <ul class="large-block-grid-4 small-block-grid-2">
@@ -336,14 +605,16 @@
                             </ul>
                         </div>
                         <div class="large-24 columns text-center">
-                            <small>A <a href="http://kamelotkapital.com" target="_blank">Kamelot Kapital</a> backed company.</small>
+                            <small>A <a href="http://www.linkedin.com/company/kamelot-kapital-pte-ltd" target="_blank">Kamelot Kapital</a> backed company.</small>
                         </div>
                     </div>
                 </footer>
-        </section>
+            </section>
+            </div>
+        </div>
+    </div>
   </script>
-<!--achivement section ends here-->
-
+<!--/about-->
 
   <script src="js/libs/jquery-1.10.2.js"></script>
   <script src="js/libs/handlebars-v1.3.0.js"></script>
