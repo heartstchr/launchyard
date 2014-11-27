@@ -22,7 +22,7 @@
       <nav class="top-bar ">
                 <ul class="title-area">
                     <li class="name">
-                        <span class="logo" ><a href="/">launchyard </a></span>
+                        <span class="logo" >{{#link-to 'index'}}launchyard {{/link-to}}</span>
                     </li>
                     <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
                 </ul>
@@ -47,8 +47,11 @@
                     </ul>
                 </section>
         </nav>
-
-        <!--content starts here-->
+      {{outlet}}
+  </script>
+<!--index secction-->
+<script type="text/x-handlebars" id="index">
+<!--content starts here-->
           <section class="landingSection getHeight">
                   <h1 class="mega">We help build startups.</h1>
                   <h3 class="delta text-center">We are a no-sweat technical partner for early stage entrepreneurs to launch ideas from scratch and for later stage startups to build more quickly and affordably.</h3>
@@ -66,9 +69,8 @@
               <!--<span class="moveDown"> <a href="#ideation" title="Learn more"><i class="icon-circle"></i> </a></span>-->
               <!--</div>-->
           </section>
+</script>
 
-      {{outlet}}
-  </script>
 
 <!-- ideation section -->
   <script type="text/x-handlebars" id="ideationSection">
