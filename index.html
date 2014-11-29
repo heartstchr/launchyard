@@ -29,13 +29,13 @@
                 <section class="top-bar-section ">
                     <ul class="right desktopNav">
                         <!--<li><a href="#getFree">Free landing page</a></li>-->
-                        <li>{{#link-to 'Case-studies'}}Case studies{{/link-to}}</li>
+                        <li>{{#link-to 'CaseStudies'}}Case studies{{/link-to}}</li>
                         <li>{{#link-to 'about'}}About{{/link-to}}</li>
-                        <li>{{#link-to 'getInTouch'}}Get in touch{{/link-to}}</li>
+                        <li {{ action 'getInTouch' }}>{{#link-to 'getInTouch'}}Get in touch{{/link-to}}</li>
                         <li><a href="http://delighthq.com">Customer Login</a></li>
                         <ul class="sub-category">
                         <hr>
-                        <li>{{#link-to 'Case-studies' class="heading"}}Case studies{{/link-to}}</li>
+                        <li>{{#link-to 'CaseStudies' class="heading"}}Case studies{{/link-to}}</li>
                         <li class="mob-tab">{{#link-to 'albums'}}The Albums{{/link-to}}</li>
                         <li class="mob-tab">{{#link-to 'picquity'}}Picquity{{/link-to}}</li>
                         <hr>
@@ -86,7 +86,7 @@
                       <div class="large-24 columns">
                           <div class="row">
                            <div class="large-12 large-centered columns text-center highlight error">
-                              <div id="learnMore" class="button success radius btn-border-white">{{#link-to 'ideationSection'}}Learn more{{/link-to}}</div>
+                              <div id="learnMore" class="button success radius btn-border-white" {{ action 'learnMore' }}>{{#link-to 'ideationSection'}}Learn more{{/link-to}}</div>
                           </div>
                       </div>
                   </div>
@@ -261,7 +261,7 @@
                                 <!--<a href=""><small>want to see more</small></a>-->
                             </ul>
                             </div>
-                            <h6 class="text-center text-decoration" style="margin-top:3em">{{#link-to 'Case-studies'}} Read through the case studies</i>{{/link-to}}</h6>
+                            <h6 class="text-center text-decoration" style="margin-top:3em">{{#link-to 'CaseStudies'}} Read through the case studies</i>{{/link-to}}</h6>
                         </div>
             </section> 
         </script>
@@ -385,7 +385,7 @@
                  </div>
                </div>
                <p class="text-center down-arrow">
-                {{#link-to 'caseStudiesAbout' class="jumper bt-link-arrow"}}<i class="icon-chevron-down"></i>{{/link-to }}
+                {{#link-to 'caseStudiesAbout' class="jumper bt-link-arrow"}}<i class="icon-chevron-down"{{action 'down'}}></i>{{/link-to }}
               </p>
             </div>
         </script>
@@ -654,7 +654,7 @@
                             {{#link-to 'getInTouch' class="button postfix radius btn-get-in-touch"}}Get in touch{{/link-to}}
                           </div>
                           <p class="text-center">
-                          {{#link-to 'Case-studies' class="backcasestudies"}}← Back to case studies{{/link-to}}
+                          {{#link-to 'CaseStudies' class="backcasestudies"}}← Back to case studies{{/link-to}}
                           </p>
                         </div>
                         <footer>
@@ -847,7 +847,7 @@
                                {{#link-to 'getInTouch' class="button postfix radius btn-get-in-touch"}}Get in touch{{/link-to}}
                              </div>
                              <p class="text-center">
-                              {{#link-to 'Case-studies' class="backcasestudies"}}← Back to case studies {{/link-to}}
+                              {{#link-to 'CaseStudies' class="backcasestudies"}}← Back to case studies {{/link-to}}
                              </p>
                            </div>
                            <footer>

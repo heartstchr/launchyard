@@ -5,12 +5,21 @@ App.Router.map(function(){
 		this.resource('aboutus',{path: '/about#aboutus'});
 		this.resource('faq',{path: '/about#faq'});
 		this.resource('location',{path: '/about#location'});
-	this.resource('Case-studies',{path: '/Case-studies'});
-		this.resource('albums',{path: '/Case-studies/albums'});
-		this.resource('picquity',{path: '/Case-studies/picquity'});
+	this.resource('CaseStudies',{path: '/CaseStudies'});
+		this.resource('albums',{path: '/CaseStudies/albums'});
+		this.resource('picquity',{path: '/CaseStudies/picquity'});
 	this.resource('getInTouch');
-	this.resource('ideationSection',{path: 'ideationSection'});
-	this.resource('caseStudiesAbout',{path: 'caseStudiesAbout'});
+	this.resource('ideationSection',{path: '/ideationSection'});
+	this.resource('caseStudiesAbout',{path: '/caseStudiesAbout'});
+});
+
+App.ApplicationController =  Ember.Controller.extend({
+		 actions: {
+		    getInTouch: function() {
+		      this._super();
+			$("html, body").animate({ scrollTop: $('#getInTouch').offset().top }, 1000);
+		    }
+		  }
 });
 
 App.IndexRoute = Ember.Route.extend({
@@ -28,10 +37,33 @@ App.IndexRoute = Ember.Route.extend({
   	this.render('achievementSection',{outlet: 'achievementSection'});
   	}	
 });
-	App.IdeationSectionRoute = Ember.Route.extend({
-		activate: function(){
+	App.IndexController =  Ember.Controller.extend({
+		 actions: {
+		    learnMore: function() {
+		      this._super();
 			$("html, body").animate({ scrollTop: $('#ideation').offset().top }, 1000);
-		},
+		    }
+		  }
+	});
+
+	App.CaseStudiesController = Ember.Controller.extend({
+		actions: {
+		    down: function() {
+		      this._super();
+			$("html, body").animate({ scrollTop: $('#about').offset().top }, 1000);
+		    }
+		}	
+	});
+	App.CaseStudiesAboutController = Ember.Controller.extend({
+		actions: {
+		    down: function() {
+		      this._super();
+			$("html, body").animate({ scrollTop: $('#about').offset().top }, 1000);
+		    }
+		}	
+	});
+
+	App.IdeationSectionRoute = Ember.Route.extend({
 		renderTemplate: function(){
 	  	this.render('index',{outlet: 'index'});
 	  	this.render('ideationSection',{outlet: 'ideationSection'});
@@ -41,13 +73,11 @@ App.IndexRoute = Ember.Route.extend({
 	  	this.render('clientSection',{outlet: 'clientSection'});
 	  	this.render('freeLandingPage',{outlet: 'freeLandingPage'});
 	  	this.render('achievementSection',{outlet: 'achievementSection'});
-	  	}
+	  	},
 	});
 
+
 	App.GetInTouchRoute = Ember.Route.extend({
-		activate: function(){
-			$("html, body").animate({ scrollTop: $('#getInTouch').offset().top }, 1000);
-		},
 		renderTemplate: function(){
 	  	this.render('index',{outlet: 'index'});
 	  	this.render('ideationSection',{outlet: 'ideationSection'});
@@ -72,9 +102,6 @@ App.CaseStudiesRoute = Ember.Route.extend({
 });
 	
 	App.CaseStudiesAboutRoute = Ember.Route.extend({
-		activate: function(){
-			$("html, body").animate({ scrollTop: $('#about').offset().top }, 1000);
-		},
 		renderTemplate: function(){
 	  	this.render('content',{outlet: 'content'});
 	  	this.render('caseStudiesAbout',{outlet: 'caseStudiesAbout'});
