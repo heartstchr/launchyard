@@ -26,8 +26,39 @@ App.IndexRoute = Ember.Route.extend({
   	this.render('clientSection',{outlet: 'clientSection'});
   	this.render('freeLandingPage',{outlet: 'freeLandingPage'});
   	this.render('achievementSection',{outlet: 'achievementSection'});
-  }	
+  	}	
 });
+	App.IdeationSectionRoute = Ember.Route.extend({
+		activate: function(){
+			$("html, body").animate({ scrollTop: $('#ideation').offset().top }, 1000);
+		},
+		renderTemplate: function(){
+	  	this.render('index',{outlet: 'index'});
+	  	this.render('ideationSection',{outlet: 'ideationSection'});
+	  	this.render('platformSection',{outlet: 'platformSection'});
+	  	this.render('featureSection',{outlet: 'featureSection'});
+	  	this.render('getInTouch',{outlet: 'getInTouch'});
+	  	this.render('clientSection',{outlet: 'clientSection'});
+	  	this.render('freeLandingPage',{outlet: 'freeLandingPage'});
+	  	this.render('achievementSection',{outlet: 'achievementSection'});
+	  	}
+	});
+
+	App.GetInTouchRoute = Ember.Route.extend({
+		activate: function(){
+			$("html, body").animate({ scrollTop: $('#getInTouch').offset().top }, 1000);
+		},
+		renderTemplate: function(){
+	  	this.render('index',{outlet: 'index'});
+	  	this.render('ideationSection',{outlet: 'ideationSection'});
+	  	this.render('platformSection',{outlet: 'platformSection'});
+	  	this.render('featureSection',{outlet: 'featureSection'});
+	  	this.render('getInTouch',{outlet: 'getInTouch'});
+	  	this.render('clientSection',{outlet: 'clientSection'});
+	  	this.render('freeLandingPage',{outlet: 'freeLandingPage'});
+	  	this.render('achievementSection',{outlet: 'achievementSection'});
+	  	}
+	});
 
 App.CaseStudiesRoute = Ember.Route.extend({
 	activate: function() {
@@ -39,6 +70,18 @@ App.CaseStudiesRoute = Ember.Route.extend({
   	this.render('footer',{outlet: 'footer'});
   	}
 });
+	
+	App.CaseStudiesAboutRoute = Ember.Route.extend({
+		activate: function(){
+			$("html, body").animate({ scrollTop: $('#about').offset().top }, 1000);
+		},
+		renderTemplate: function(){
+	  	this.render('content',{outlet: 'content'});
+	  	this.render('caseStudiesAbout',{outlet: 'caseStudiesAbout'});
+	  	this.render('footer',{outlet: 'footer'});
+	  	}
+	});
+
 		App.AlbumsRoute = Ember.Route.extend({
 			activate: function() {
 			    document.title = "Case Study: The Albums| LaunchYard - We help build startups.";
@@ -72,25 +115,3 @@ App.AboutRoute = Ember.Route.extend({
   	this.render('footer',{outlet:'footer'});
   	}
 });
-
-App.IndexController = Ember.Controller.extend({
-	actions:{
-		ideationSection: function(){
-			this._super();
-    		window.location = "#ideationSection";
-		} 
-	}
-});
-
-
-App.GetInTouchRoute = Ember.Route.extend({
-
-	actions:{
-		getInTouch: function(){
-			this._super();
-			window.location = "#getInTouch"
-		}
-	}
-});
-
-
