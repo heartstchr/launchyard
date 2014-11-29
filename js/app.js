@@ -2,7 +2,12 @@ App = Ember.Application.create();
 
 App.Router.map(function(){
 	this.resource('about',{path: '/about'});
+		this.resource('aboutus',{path: '/about#aboutus'});
+		this.resource('faq',{path: '/about#faq'});
+		this.resource('location',{path: '/about#location'});
 	this.resource('Case-studies',{path: '/Case-studies'});
+		this.resource('albums',{path: '/Case-studies/albums'});
+		this.resource('picquity',{path: '/Case-studies/picquity'});
 	this.resource('getInTouch');
 	this.resource('ideationSection',{path: 'ideationSection'});
 	this.resource('caseStudiesAbout',{path: 'caseStudiesAbout'});
@@ -34,6 +39,26 @@ App.CaseStudiesRoute = Ember.Route.extend({
   	this.render('footer',{outlet: 'footer'});
   	}
 });
+		App.AlbumsRoute = Ember.Route.extend({
+			activate: function() {
+			    document.title = "Case Study: The Albums| LaunchYard - We help build startups.";
+			},
+		  	renderTemplate: function() {
+			  	this.render('albumContent', {outlet: 'albumContent'});
+			    this.render('albumBody', {outlet: 'albumBody'});
+			    this.render('albumFooter', {outlet: 'albumFooter'});
+		  	}
+		});
+		App.PicquityRoute = Ember.Route.extend({
+			activate: function() {
+			    document.title = "Case Study: Picquity| LaunchYard - We help build startups.";
+			},
+		  renderTemplate: function() {
+		  	this.render('picquityContent', {outlet: 'picquityContent'});
+		    this.render('picquityBody', {outlet: 'picquityBody'});
+		    this.render('picquityfooter', {outlet: 'picquityfooter'});
+		  }
+		});
 
 App.AboutRoute = Ember.Route.extend({
 	activate: function() {

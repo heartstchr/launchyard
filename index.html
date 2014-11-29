@@ -35,14 +35,14 @@
                         <li><a href="http://delighthq.com">Customer Login</a></li>
                         <ul class="sub-category">
                         <hr>
-                        <li><a href="/case-studies" class="heading">Case studies</a></li>
-                        <li class="mob-tab"><a href="/case-studies/albums">The Albums</a></li>
-                        <li class="mob-tab"><a href="/case-studies/picquity">Picquity</a></li>
+                        <li>{{#link-to 'Case-studies' class="heading"}}Case studies{{/link-to}}</li>
+                        <li class="mob-tab">{{#link-to 'albums'}}The Albums{{/link-to}}</li>
+                        <li class="mob-tab">{{#link-to 'picquity'}}Picquity{{/link-to}}</li>
                         <hr>
-                        <li><a href="/about" class="heading">About</a></li>
-                        <li class="mob-tab"><a href="/about#about">Who we are</a></li>
-                        <li class="mob-tab"><a href="/about#faq">FAQ</a></li>
-                        <li class="mob-tab"><a href="/about#location">Where we are</a></li>
+                        <li>{{#link-to 'about' class="heading"}}About{{/link-to}}</li>
+                        <li class="mob-tab">{{#link-to 'aboutus'}}Who we are{{/link-to}}</li>
+                        <li class="mob-tab">{{#link-to 'faq'}}FAQ{{/link-to}}</li>
+                        <li class="mob-tab">{{#link-to 'location'}}Where we are{{/link-to}}</li>
                         </ul>
                     </ul>
                 </section>
@@ -58,7 +58,14 @@
       {{outlet achievementSection}}
     <!--casestudies-->
       {{outlet content}}
-      {{outlet caseStudiesAbout}}  
+      {{outlet caseStudiesAbout}}
+          {{outlet albumContent}}
+          {{outlet albumBody}}
+          {{outlet albumFooter}}
+
+          {{outlet picquityContent}}
+          {{outlet picquityBody}}
+          {{outlet picquityfooter}}  
     <!--about-->
       {{ outlet about }}
       {{outlet peopleSection}}
@@ -79,7 +86,7 @@
                       <div class="large-24 columns">
                           <div class="row">
                            <div class="large-12 large-centered columns text-center highlight error">
-                              <div id="learnMore" class="button success radius btn-border-white">{{#link-to 'ideationSection'}}Learn more{{/link-to}}</div>
+                              <div id="learnMore" class="button success radius btn-border-white"{{action 'ideationSection'}}>Learn more</div>
                           </div>
                       </div>
                   </div>
@@ -345,7 +352,6 @@
             </section> 
           </script>
     <!--achivement section ends here-->
-  </script>
 <!--/index section-->
 
 <!--case-stidies-->
@@ -379,7 +385,7 @@
                  </div>
                </div>
                <p class="text-center down-arrow">
-                <a class="jumper bt-link-arrow">{{#link-to 'caseStudiesAbout'}}<i class="icon-chevron-down"></i>{{/link-to }}</a>
+                {{#link-to 'caseStudiesAbout' class="jumper bt-link-arrow"}}<i class="icon-chevron-down"></i>{{/link-to }}
               </p>
             </div>
         </script>
@@ -388,7 +394,6 @@
     <!--caseStudiesAbout-->
         <script type="text/x-handlebars" id="caseStudiesAbout">
           <section id="about">
-            <div id="down">
              <div class="row">
               <div class="large-24 columns">
                 <div class="obj-anima hover-right">
@@ -401,7 +406,7 @@
                       <p class="white-text">We settled on Zurb Foundation which is a responsive front-end framework that allowed the application to work seamlessly across different platforms. We focused on tight release cycles with smaller feature sets, allowing them to launch quickly and iterate. 
                       </p>
                       <p class="right text-center">
-                        <a href="/case-studies/albums" class="button success radius btn-green ">READ CASE STUDY</a>
+                        {{#link-to 'albums' class="button success radius btn-green "}}READ CASE STUDY{{/link-to}}
                       </p>
                     </div>
                     <div class="b2 album-bg-case"></div>
@@ -417,7 +422,7 @@
                       <p class="white-text">We went to work leveraging a non-sql database (Mongodb) to solve the unstructured data problem and identified robust solutions that we could implement for queuing and processing the images asynchronously. Our solution allowed them to launch their product with the sophisticated functionality they required relatively quickly. 
                       </p>
                       <p class="right text-center">
-                        <a href="/case-studies/picquity" class="button success radius btn-pink ">READ CASE STUDY</a>
+                        {{#link-to 'picquity' class="button success radius btn-pink "}}READ CASE STUDY{{/link-to}}
                       </p>
                     </div>
                     <div class="b2 picquity-bg-case"></div>
@@ -440,7 +445,6 @@
                   </div>
                 </div>-->
               </div>
-            </div>
             </div>
           </section>
         </script>
@@ -468,6 +472,404 @@
         </div>
         </script>
     <!--/footer-->
+
+              <!--the album-->
+                  <!--albumcontent-->
+                    <script type="text/x-handlebars" id="albumContent">
+                        <div class="albums-bg">
+                         <div class="large-23 columns case-st-slide-body">
+                           <div class="large-7 columns founder-info">
+                             <div class="founder-profile">
+                              <h4>The Albums</h4>
+                              <p class="application-desc">An online space for families to share the moments they never want to forget in a private and secure setting.
+                              </p>
+                            </div>
+                            <div class="founder-img-body albums-found-img">
+                             <img src="images/andrew1.jpg" class="founder-img">
+                             <h4 class="user-heading text-center">Andrew Kopke</h4>
+                           </div>
+                           <p class="text-center">
+                             <a href="https://thealbums.co/" target="_blank" id="learnMore" class="button success radius btn-vist">VISIT SITE</a></p>
+                           </div>
+                           <div class="large-15 columns albums-screenshot-body">
+                            <img src="images/albums-screens.png">
+                          </div>
+                          </div>
+                        </div>
+                    </script>
+                  <!--/albumcontent-->
+
+                  <!--albumbody-->
+                    <script type="text/x-handlebars" id="albumBody">
+                        <div class="row">
+                           <div class="large-24 columns blog-content-body">
+                             <div class="large-17 columns founders-content">
+                               <h1 class="epsilon">About the Founder <span class="link"><a href="https://twitter.com/kopkey" target="_blank"><i class="icon-circle-arrow-right"></i></a></span></h1>
+                               <p>Andrew and Sarah are husband and wife and co-founders of The Albums. They started it to share pictures with their own families, spread across 8 time zones, in a safe secure environment. 
+                               </p>
+                               <h1 class="epsilon">How was the The Albums born?</h1>
+                               <p>We weren’t looking to start a startup, but once we got the idea in our heads we couldn’t get it out. Four years ago, we moved across the world from Norman, Oklahoma to Beirut, Lebanon. One night we were looking through pictures together of what our friends at home were up to… vacations they had just taken or moments with their babies that were growing so, so fast. 
+                               </p>
+                               <p>As thankful as we are for all the online tools that make the thousands of miles between Beirut and Oklahoma seem so much smaller, we commented to each other that night that none of them seemed like the best place for the amazing family pictures we were seeing. We talked about how they didn’t feel personal enough or peaceful enough. None of them seemed like a lasting place for a family to gather around ten or fifteen years from now to remember the incredible moments they had shared. So we started dreaming and brainstorming about what kind of place we would want to use one day for our family… 
+                               </p>
+                               <p>
+                                What we wanted was a place built just for families that could capture the feeling of looking through those old photo albums. Not necessarily as a storage site for every single one of the pictures we take, but as a place to keep & remember our favorite moments and to share them with our best friends and our families at home.
+                              </p>
+                              <h1 class="epsilon">What steps did The Albums take to launch?</h1>
+                              <p>We drew up some wireframes and then turned that into a static site to get feedback from our friends and family. We received positive feedback from our initial users but based on constructive criticism on our template, we iterated on our design keeping our core ideas and values. From there, we made a landing page and collected email addresses until a certain threshold that we had set as our target. It was then time to register The Albums and recruit a team. </p> 
+                              <h1 class="epsilon">How did they connect with LaunchYard?</h1>
+                              <p class="extra-bottom">Andrew interviewed some developers and online entrepreneurs and decided it was best to wait to hire an in-house team until The Albums had sustainable growth. <a href="http://www.rajeshsetty.com/" class="case-hreflink">Rajesh Setty</a> introduced Andrew to the team at LaunchYard.</p> 
+                              <h1 class="epsilon feedback-title">Feedback on the first interaction</h1>
+                              <p class="feedback-text extra-bottom"><i class="icon-quote-left quote"></i> Atif quickly gained my trust by not making careless promises and making a concrete, straightforward proposal.  <i class="icon-quote-right quote"></i> - <span>Andrew Kopke</span></p> 
+                              <h1 class="epsilon">How did LaunchYard help?</h1>
+                              <p>Andrew was very clear about the vision he had for his product and built features in a logical progression, getting feedback from live users at every step, before building further. 
+                              </p>
+                              <p>As our usual process, we focused on defining a release version which we could launch in under two months. The core functionality they needed to launch was:
+                              </p>
+                              <ul>
+                              <li>Simplified responsive User interface</li>
+                               <li>User management system</li>
+                               <li>Album creation and picture uploads with strict privacy at the code level</li>
+                               <li>Albums sharing with friends, family and individuals.</li>
+                               </ul>
+                             </p>
+                             <p>We first focused on identifying a suitable technology stack that could work with these demands and also scale easily later on.
+                             </p>
+                             <h1 class="dev-text">Front-end development </h1>
+                             <p>Since the requirement was to build a web application which should work and look perfect on all various PC, laptop and mobile devices and screens, we needed a flexible framework that supports responsive design which can work on multi-platform and devices smoothly. We had some experience with Zurb <a href="http://foundation.zurb.com/" target="blank" class="case-hreflink">Foundation</a> and we found it that it works really well for responsive design that is being continuously iterated. We went with this for The Albums, and were really happy with our results.
+                             </p>
+                             <p>
+                              <img src="images/mobile-resp.png">
+                            </p>
+                            <h1 class="dev-text">Back-end development </h1>
+                            <p>The decision to go with Django and Python was not that tough. Image centric sites like Instagram and Pinterest are built using Django, and our love for Python made it easy to go with <a href="http://www.python.org/" target="_blank" class="case-hreflink">Python</a> and <a href="https://www.djangoproject.com/" target="_blank" class="case-hreflink">Django</a>.</p>
+                            <p>
+                            <ul>
+                              <li>Programming language - Python</li>
+                              <li>Web framework - Django</li>
+                              <li>Database - MySQL</li>
+                              <li>Web server - Nginx</li>
+                              <li>Payment processor to manage recurring payments - Moonclerk.com</li>
+                              <li>Server hosting - Amazon EC2</li>
+                              <li>Image persistent storage - Amazon S3</li>
+                              <li>Secure data transfer - SSL certificate from NameCheap.</li> 
+                            </ul>
+                            </p>
+                            <br>
+                            <h1 class="dev-text">Development</h1>
+                            <p class="extra-bottom">We needed to work fast and divided up the launch release into weekly release cycles broken down by product features that the founders could track continuously. As every feature was released, Sarah and Andrew, would test and iterate with us.
+                            </p>  
+                            <h1 class="dev-text">On quality, product iteration and transparency</h1>
+                            <p class="feedback-text extra-bottom"><i class="icon-quote-left quote"></i> The LaunchYard team truly developed The Albums as if it was their own startup. Their integrity, unique process, and project management software made it easy to quickly iterate and have clear goals and communication. <i class="icon-quote-right quote"></i> -<span> Andrew Kopke</span></p>
+                            <h1 class="dev-text">Deployment</h1>
+                            <p>We hosted the application on <a href="http://aws.amazon.com/ec2/" target="_blank" class="case-hreflink">Amazon EC2</a> and deployed it on a <a href="http://wiki.nginx.org/" target="_blank" class="case-hreflink">Nginx</a> web server. We also set up the SSL certificate to handle data transfer securely. 
+                            </p>
+                            <h1 class="dev-text">On end results</h1>
+                            <p class="feedback-text extra-bottom"><i class="icon-quote-left quote"></i> It feels so good to have The Albums out there now and LaunchYard really made it easy to release a MVP that we could be proud of in the amount of time we agreed on. <i class="icon-quote-right quote"></i> - <span>Andrew Kopke</span></p>
+
+                            <h1 class="epsilon">What happened next to The Albums?</h1>
+                            <p>The Albums launched to a core group of users, iterated on their feedback and then went to work building the next features to increase engagement.</p>
+                            <h1 class="epsilon">How does LaunchYard continue to help?</h1>
+                            <p>Post-launch, we maintain and support the existing product as well as continue to iterate with the founders to release features based on customer feedback.</p>
+                          </div>
+                          <div class="large-6 columns timeline-body">
+                            <h4 class="timeline-title">Milestones</h4>
+                            <div class="timeline-content">
+                              <div class="progress-line">
+                                <div class="timeline-text">
+                                  <div class="left timeline-date">
+                                    <h4 class="text-center">9 July</h4>
+                                    <h6 class="text-center">2013</h6>
+                                  </div>
+                                  <div class="pointer-left"></div>
+                                  <div class="timeline-popup">
+                                    <p>Connected with LaunchYard</p>
+                                  </div>
+                                </div>
+                                <div class="timeline-text">
+                                  <div class="left timeline-date">
+                                    <h4 class="text-center">22 July</h4>
+                                    <h6 class="text-center">2013</h6>
+                                  </div>
+                                  <div class="pointer-left"></div>
+                                  <div class="timeline-popup">
+                                   <p>Product development started</p>
+                                 </div>
+                               </div>
+                               <div class="timeline-text">
+                                <div class="left timeline-date">
+                                  <h4 class="text-center">14 Sep</h4>
+                                  <h6 class="text-center">2013</h6>
+                                </div>
+                                <div class="pointer-left"></div>
+                                <div class="timeline-popup">
+                                  <p>First version of the product was launched,
+                                    developed within 4 releases</p>
+                                  </div>
+                                </div>
+                                <div class="timeline-text">
+                                  <div class="month-stats">
+                                   <h4 class="text-center">2 MONTHS</h4>
+                                   <h6 class="text-center">COMPLETED</h6>
+                                 </div>
+                               </div>
+                               <div class="timeline-text">
+                                <div class="left timeline-date">
+                                  <h4 class="text-center">16 Nov</h4>
+                                  <h6 class="text-center">2013</h6>
+                                </div>
+                                <div class="pointer-left"></div>
+                                <div class="timeline-popup">
+                                  <p>Few more releases based on customer feedback</p>
+                                  </div>
+                                </div>
+                                <div class="timeline-text">
+                                  <div class="left timeline-date">
+                                    <h4 class="text-center">10 Feb</h4>
+                                    <h6 class="text-center">2014</h6>
+                                  </div>
+                                  <div class="pointer-left"></div>
+                                  <div class="timeline-popup">
+                                    <p>Minor feature enhancements</p>
+                                    </div>
+                                  </div>
+
+                                  <div class="timeline-text">
+                                    <div class="month-stats">
+                                     <h4 class="text-center">First Paid</h4>
+                                     <h6 class="text-center">CUSTOMER</h6>
+                                   </div>
+                                 </div>
+                               </div>
+                             </div>
+                           </div>
+                         </div>
+                         </div>
+                    </script>
+                  <!--/albumbody-->
+
+                  <!--albumfooter-->
+                    <script type="text/x-handlebars" id="albumFooter">
+                        <div class="large-6 small-24 small-centered large-centered columns getTouch">
+                            {{#link-to 'getInTouch' class="button postfix radius btn-get-in-touch"}}Get in touch{{/link-to}}
+                          </div>
+                          <p class="text-center">
+                          {{#link-to 'Case-studies' class="backcasestudies"}}← Back to case studies{{/link-to}}
+                          </p>
+                        </div>
+                        <footer>
+                          <div class="row">
+                            <div class="large-8 columns large-centered">
+                              <ul class="large-block-grid-4 small-block-grid-2 footer-links">
+                                <li><a href="http://blog.launchyard.com/" target="_blank">Blog</a></li>
+                                <!--<li><a href="/jobs">Jobs</a></li>-->
+                                <li><a href="mailto:hello@launchyard.com" title="Send mail">Email Us</a></li>
+                                <li><a href="https://twitter.com/launchyard" target="_blank" title="Follow us">Twitter</a></li>
+                                <li><a href="https://www.facebook.com/Launchyard" target="_blank" title="Like us">Facebook</a></li>
+                                <!--<li><a href="#">Google+</a></li>-->
+                              </ul>
+                            </div>
+                            <div class="large-24 columns text-center">
+                              <small>A <a href="http://www.linkedin.com/company/kamelot-kapital-pte-ltd" target="_blank">Kamelot Kapital</a> backed company.</small>
+                            </div>
+                          </div>
+                        </footer>
+                    </script>
+                  <!--/albumfooter-->
+              <!--/the album-->
+              
+              <!--picquity-->
+                  <!--picquitycontent-->
+                    <script type="text/x-handlebars" id="picquityContent">
+                         <div class="picquity-bg">
+                             <div class="large-23 columns case-st-slide-body">
+                               <div class="large-7 columns founder-info">
+                                 <div class="founder-profile">
+                                  <h4> Picquity</h4>
+
+                                  <p class="application-desc">Picquity is a SAAS based application which helps to discover your images on the web.</p>
+                                </div>
+                                <div class="founder-img-body">
+                                 <img src="images/picquity_found1.jpg" class="founder-img">
+                                 <h4 class="user-heading text-center">Matthew Goos <br>& <br>Robert Henson</h4>
+                               </div>
+                               <p class="text-center">
+                                 <a href="http://picquity:PictureThis$$@picquity.com/" target="_blank" id="learnMore" class="button success radius btn-vist">VISIT SITE</a></p>
+                               </div>
+                               <div class="large-17 columns albums-screenshot-body">
+                                <img src="images/albums-screens-picquty.png">
+                              </div>
+                            </div>
+                          </div>
+                        </script>
+                  <!--/picquitycontent-->
+
+                  <!--picquitybody-->
+                    <script type="text/x-handlebars" id="picquityBody">
+                      <div class="row">
+                         <div class="large-24 columns blog-content-body">
+                           <div class="large-17 columns founders-content">
+                             <h1 class="epsilon">About the Founder <span class="link"><a href="https://twitter.com/m4g005" target="_blank"><i class="icon-circle-arrow-right"></i></a></span></h1>
+                             <p>Rob Henson has 15+ years in media licensing. He is the founder of Evolve Images and president of PACA.</p>
+                             <p>Matthew Goos has worked in the software industry for 15+ years. They met while they each worked at Getty Images. Their kids are friends and working together was a natural thing.</p>
+                             <h1 class="epsilon">How was the Picquity born?</h1>
+                             <p>Picquity was conceived from a services gap within the photo industry -- specifically, they identified the services of enterprise image tracking companies who provid image use reporting to large agencies. These businesses were all enterprise solutions and at a high cost. At the same time, Matthew and Rob knew there was a large need for these solutions at a lower cost across a prosumer-level strata -- that of the professional or amateur photographer. Realizing that no one was addressing this market opportunity, they set out to prove their concept of a low cost, frictionless image discovery service: Picquity was born.</p>
+                             <h1 class="epsilon">What steps did Picquity take to launch?</h1>
+                             <p>Initially, Matthew and Rob set up a static web site explaining what Picquity was. It opened the door to conversations with others in the space willing to give a little seed money to get an MVP up and running. Matthew, who was a programmer, created a proof of concept web crawler that integrated into image fingerprinter. Things were looking good.</p> 
+                             <h1 class="epsilon">How did they connect with LaunchYard?</h1>
+                             <p class="extra-bottom">They soon realized Matthew that could not do all of the coding alone. They specifically went looking for an outsourcing team focused on startups, that was affordable and could solve sophisticated challenges. Matthew and Rob spoke with loads of folks before connecting with LaunchYard. Our technical depth, startup values and track record tipped the scales in our favor..</p> 
+                             <h1 class="epsilon feedback-title">Feedback on the first interaction</h1>
+                             <p class="feedback-text extra-bottom"><i class="icon-quote-left quote"></i> It was very smooth. We shared the vision of what we needed and LaunchYard 
+                              team was able to take this information and come backwith some estimates 
+                              for work. <i class="icon-quote-right quote"></i> - <span> Matthew Goos, Co-founder</span> </p> 
+                              <h1 class="epsilon">How did LaunchYard help?</h1>
+                              <p>Rob and Matthew wanted a system which had the minimal necessary functionality for early adopters that can be released quickly with minimal investment so they could validate their ideas before spending more time and money.</p>
+                              <p>As a first step, we focused on defining a launch release version which we could launch in under two months. The core functionality was to manage user’s uploaded images, fingerprint them and match them with the massive list of already fingerprinted curated wild images across the web. We also realized that it was important to accept one-off and recurring payments so that we could iterate on our business model early on.</p>
+                              <p>Based on the launch release feature set, we identified the key technical challenges:</p>
+                              <p> 
+                                <ul>
+                                  <li>To manage massive image processing intensive actions.</li>
+                                  <li>Store and access unstructured data.</li>
+                                  <li>Processing massive list of images from different websites.</li>
+                                  <li>Handling recurring payments.</li>
+                                  <li>Time constraint to launch it early to validate with the early customer.</li>
+                                </ul>
+                              </p>
+                              <p>The first thing needed to figure out the best possible technology stack that can work seamlessly and scale easily. After a couple of brainstorming session, we came up to the conclusion to use non-sql database because of a lot of unstructured data, and <a href="http://www.mongodb.org/" target="blank" class="case-hreflink">Mongodb</a> instantly became the default database.We also needed a queuing system to process images asynchronously. We had a great experience with <a href="http://www.celeryproject.org/" target="blank" class="case-hreflink">Celery</a> and we went ahead with it, and <a href="http://redis.io/" target="blank" class="case-hreflink">Redis</a> as a message broker for Celery.</p>
+                              <p>The final technology stack which we have used to build Picquity:</p>
+                              <p>
+                                <ul>
+                                 <li>Programming language - Python</li>
+                                 <li>Web framework - Flask</li>
+                                 <li>Database - Mongodb</li>
+                                 <li>Task queue - Celery</li>
+                                 <li>Task queue message broker - Redis</li>
+                                 <li>Web server - Nginx</li>
+                                 <li>Payment processor to manage recurring payments - Stripe </li>
+                                 <li>integration</li>
+                                 <li>Server hosting - Amazon EC2</li>
+                                 <li>Image persistent storage - Amazon S3</li>
+                                 <!--<li>Secure data transfer - SSL certificate</li> -->
+                               </ul>
+                               <h1 class="dev-text">Development</h1>
+                               <p class="extra-bottom">We divided up the launch release version into weekly release cycles broken down by product features that the founders could track. As every feature was released, Rob and Matt, would test and iterate with us in real-time. We went to work building the system using <a href="http://www.python.org/" target="blank" class="case-hreflink">Python</a> (one of our favorite programming language) on <a href="http://flask.pocoo.org/" target="blank" class="case-hreflink">Flask</a> web framework. We ran a couple of task queues to fingerprint the images, image resizing for thumbnails, search sites, and upload images to Amazon S3. We also integrated the <a href="https://stripe.com/" target="blank" class="case-hreflink">Stripe</a> API to accept recurring payments using credit card card.</p>  
+                               <h1 class="epsilon feedback-title">On quality, product iteration and transparency</h1>
+                               <p class="feedback-text extra-bottom"><i class="icon-quote-left quote"></i> LaunchYard team has got a solid technical depth. Their code is concise and easy to read. They quickly responded to updated/changing
+                                requirements. We had clear insight into the state of the project. <i class="icon-quote-right quote"></i> - <span> Matthew Goos, Co-founder.</span> </p>
+                                <h1 class="epsilon feedback-title">Deployment</h1>
+                                <p>We hosted the application on <a href="http://aws.amazon.com/ec2/" target="blank" class="case-hreflink">Amazon</a> EC2 and deployed it on top of <a href="http://wiki.nginx.org/" target="blank" class="case-hreflink">Nginx</a> web server.<!-- We also set up the SSL certificate to accept payments securely.--></p>  
+                                <h1 class="epsilon feedback-title">On end results</h1>
+                                <p class="feedback-text extra-bottom"><i class="icon-quote-left quote"></i> The site looks great! We have had really great feedback from our customers. <i class="icon-quote-right quote"></i><br/> - <span> Matthew Goos, Co-founder.</span> </p>
+                                <h1 class="epsilon">What happened next to Picquity?</h1>
+                                <p>Rob and Matt are now talking to potential investors with a working version of their product in a private beta with pre-selected users. Picquity on Angel.co - <a href="https://angel.co/picquity" target="blank" class="case-hreflink">https://angel.co/picquity</a></p>
+                                <h1 class="epsilon">How does LaunchYard continue to help?</h1>
+                                <p>Post-launch, we maintain and support the existing launch product as well as continue to iterate with the founders to release features based on customer feedback.</p>
+                              </div>
+                              <div class="large-6 columns timeline-body">
+                                <h4 class="timeline-title">Milestones</h4>
+                                <div class="timeline-content">
+                                  <div class="progress-line">
+                                    <div class="timeline-text">
+                                      <div class="left timeline-date">
+                                        <h4 class="text-center">15 Feb</h4>
+                                        <h6 class="text-center">2013</h6>
+                                      </div>
+                                      <div class="pointer-left"></div>
+                                      <div class="timeline-popup">
+                                        <p>Connected with LaunchYard</p>
+                                      </div>
+                                    </div>
+                                    <div class="timeline-text">
+                                      <div class="left timeline-date">
+                                        <h4 class="text-center">26 Feb</h4>
+                                        <h6 class="text-center">2013</h6>
+                                      </div>
+                                      <div class="pointer-left"></div>
+                                      <div class="timeline-popup">
+                                       <p>Product development started</p>
+                                     </div>
+                                   </div>
+                                   <div class="timeline-text">
+                                    <div class="left timeline-date">
+                                      <h4 class="text-center">5 May</h4>
+                                      <h6 class="text-center">2013</h6>
+                                    </div>
+                                    <div class="pointer-left"></div>
+                                    <div class="timeline-popup">
+                                      <p>First version of the product is launched,
+                                        developed within 6 releases</p>
+                                      </div>
+                                    </div>
+                                    <div class="timeline-text">
+                                      <div class="month-stats">
+                                       <h4 class="text-center">2 and Half months</h4>
+                                       <h6 class="text-center">COMPLETED</h6>
+                                     </div>
+                                   </div>
+                                   <div class="timeline-text">
+                                    <div class="left timeline-date">
+                                      <h4 class="text-center">9 June</h4>
+                                      <h6 class="text-center">2013</h6>
+                                    </div>
+                                    <div class="pointer-left"></div>
+                                    <div class="timeline-popup">
+                                      <p>Second version with feature iterations</p>
+                                    </div>
+                                  </div>
+                                  <div class="timeline-text">
+                                    <div class="left timeline-date">
+                                      <h4 class="text-center">26 June</h4>
+                                      <h6 class="text-center">2013</h6>
+                                    </div>
+                                    <div class="pointer-left"></div>
+                                    <div class="timeline-popup">
+                                      <p>Patch release with bug fixes</p>
+                                    </div>
+                                  </div>
+
+                                  <div class="timeline-text">
+                                    <div class="month-stats">
+                                     <h4 class="text-center">Fund raising</h4>
+                                     <h6 class="text-center"></h6>
+                                   </div>
+                                 </div>
+                               </div>
+                             </div>
+                           </div>
+                         </div>
+                        </div>
+                        </script>
+                  <!--/picquitybody-->
+
+                  <!--picquityfooter-->
+                      <script type="text/x-handlebars" id="picquityfooter">
+                          <div class="large-6 small-24 small-centered large-centered columns getTouch">
+                               {{#link-to 'getInTouch' class="button postfix radius btn-get-in-touch"}}Get in touch{{/link-to}}
+                             </div>
+                             <p class="text-center">
+                              {{#link-to 'Case-studies' class="backcasestudies"}}← Back to case studies {{/link-to}}
+                             </p>
+                           </div>
+                           <footer>
+                            <div class="row">
+                              <div class="large-8 columns large-centered">
+                                <ul class="large-block-grid-4 small-block-grid-2 footer-links">
+                                  <li><a href="http://blog.launchyard.com/" target="_blank">Blog</a></li>
+                                  <!--<li><a href="/jobs">Jobs</a></li>-->
+                                  <li><a href="mailto:hello@launchyard.com" title="Send mail">Email Us</a></li>
+                                  <li><a href="https://twitter.com/launchyard" target="_blank" title="Follow us">Twitter</a></li>
+                                  <li><a href="https://www.facebook.com/Launchyard" target="_blank" title="Like us">Facebook</a></li>
+                                  <!--<li><a href="#">Google+</a></li>-->
+                                </ul>
+                              </div>
+                              <div class="large-24 columns text-center">
+                                <small>A <a href="http://www.linkedin.com/company/kamelot-kapital-pte-ltd" target="_blank">Kamelot Kapital</a> backed company.</small>
+                              </div>
+                            </div>
+                          </footer>
+                      </script>
+                  <!--/picquityfooter-->
+              <!--/picquity-->
 <!--/case Studies-->
 
 <!--about-->
@@ -602,7 +1004,7 @@
               </section>
               <div id="getInTouch" class="row inviteBox">
                 <div class="large-24 columns large-centered">
-                    <h2 class="epsilon">Let's get started with your product today.</h2>
+                    <h2 class="epsilon">Let s get started with your product today.</h2>
                     <div class="large-12  columns large-centered">
                         <div class="row collapse">
                             <div class="large-24 error columns gettouch-field">
