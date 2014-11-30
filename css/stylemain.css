@@ -5608,7 +5608,7 @@ pre code {
  * Dropcap Sass @include
  * Use the following Sass @include with any selector you feel necessary.
  *
-	@include dropcap($dropcap-float-position, $dropcap-font-size, $dropcap-font-family, $dropcap-txt-indent, $dropcap-margin, $dropcap-padding, $dropcap-color, $dropcap-line-height, $dropcap-bg);
+  @include dropcap($dropcap-float-position, $dropcap-font-size, $dropcap-font-family, $dropcap-txt-indent, $dropcap-margin, $dropcap-padding, $dropcap-color, $dropcap-line-height, $dropcap-bg);
  *
  * Extend this object into your custom stylesheet. Let the variables do the work.
  *
@@ -5716,7 +5716,7 @@ code {
 /**
  * Abbreviations Markup
  *
-	<abbr title="hyper text markup language">HMTL</abbr>
+  <abbr title="hyper text markup language">HMTL</abbr>
  *
  * Extend this object into your markup.
  *
@@ -5755,10 +5755,10 @@ p + .drop-cap, .blog-content-body ul li + .drop-cap {
 /**
  * Lining Definition Style Markup
  *
-	<dl class="lining">
-		<dt><b></b></dt>
-		<dd></dd>
-	</dl>
+  <dl class="lining">
+    <dt><b></b></dt>
+    <dd></dd>
+  </dl>
  *
  * Extend this object into your markup.
  *
@@ -5780,10 +5780,10 @@ p + .drop-cap, .blog-content-body ul li + .drop-cap {
 /**
  * Dictionary Definition Style Markup
  *
-	<dl class="dictionary-style">
-		<dt><b></b></dt>
-			<dd></dd>
-	</dl>
+  <dl class="dictionary-style">
+    <dt><b></b></dt>
+      <dd></dd>
+  </dl>
  *
  * Extend this object into your markup.
  *
@@ -5803,16 +5803,16 @@ p + .drop-cap, .blog-content-body ul li + .drop-cap {
 /**
  * Blockquote Markup
  *
-		<figure>
-			<blockquote cite="">
-				<p></p>
-			</blockquote>
-			<figcaption>
-				<cite>
-					<small><a href=""></a></small>
-				</cite>
-			</figcaption>
-		</figure>
+    <figure>
+      <blockquote cite="">
+        <p></p>
+      </blockquote>
+      <figcaption>
+        <cite>
+          <small><a href=""></a></small>
+        </cite>
+      </figcaption>
+    </figure>
  *
  * Extend this object into your markup.
  *
@@ -5820,11 +5820,11 @@ p + .drop-cap, .blog-content-body ul li + .drop-cap {
 /**
  * Pull Quotes Markup
  *
-	<aside class="pull-quote">
-		<blockquote>
-			<p></p>
-		</blockquote>
-	</aside>
+  <aside class="pull-quote">
+    <blockquote>
+      <p></p>
+    </blockquote>
+  </aside>
  *
  * Extend this object into your custom stylesheet.
  *
@@ -5850,11 +5850,11 @@ p + .drop-cap, .blog-content-body ul li + .drop-cap {
 /**
  * Figures Markup
  *
-	<figure>
-		<figcaption>
-			<strong>Fig. 4.2 | </strong>Type Anatomy, an excerpt from Mark Boulton's book<cite title="http://designingfortheweb.co.uk/book/part3/part3_chapter11.php">"Designing for the Web"</cite>
-		</figcaption>
-	</figure>
+  <figure>
+    <figcaption>
+      <strong>Fig. 4.2 | </strong>Type Anatomy, an excerpt from Mark Boulton's book<cite title="http://designingfortheweb.co.uk/book/part3/part3_chapter11.php">"Designing for the Web"</cite>
+    </figcaption>
+  </figure>
  *
  * Extend this object into your markup.
  *
@@ -5862,14 +5862,14 @@ p + .drop-cap, .blog-content-body ul li + .drop-cap {
 /**
  * Footnote Markup : Replace 'X' with your unique number for each footnote
  *
-	<article>
-		<p><sup><a href="#fn-itemX" id="fn-returnX"></a></sup></p>
-		<footer>
-			<ol class="foot-notes">
-				<li id="fn-itemX"><a href="#fn-returnX">↩</a></li>
-			</ol>
-		</footer>
-	</article>
+  <article>
+    <p><sup><a href="#fn-itemX" id="fn-returnX"></a></sup></p>
+    <footer>
+      <ol class="foot-notes">
+        <li id="fn-itemX"><a href="#fn-returnX">↩</a></li>
+      </ol>
+    </footer>
+  </article>
  *
  * Extend this object into your markup.
  *
@@ -5935,6 +5935,9 @@ h1, h2 {
 /*jiwan*/
   .top-bar .name:hover{
     background: url("../images/toggel.png") 6px 5px no-repeat;
+  }
+  .fade{
+  display:none;
   }
 /*jiwan*/
   .top-bar .logo {
@@ -6075,7 +6078,9 @@ h1, h2 {
   .landingSection h1 {
     color: #fafafa !important;
     font-family: 'QuicksandBold' !important;
-    text-align: center; }
+    text-align: center;
+    text-shadow: 0 0 5px #00D8FF;/*added by jiwan*/
+     }
   .landingSection h2 {
     color: #f8c573;
     font-weight: 100;
@@ -7355,7 +7360,9 @@ footer {
   .casestudies-bg .case-studies-title {
     color: white;
     font-family: 'QuicksandBold';
-    font-size: 2.5em; }
+    font-size: 2.5em; 
+    text-shadow: 0 0 5px #00D8FF;/*added by jiwan*/
+  }
     @media (min-width: 250px) and (max-width: 768px) {
       .casestudies-bg .case-studies-title {
         font-size: 26px; } }

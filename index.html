@@ -19,6 +19,7 @@
 <body>
   <!-- navigation  -->
   <script type="text/x-handlebars">
+    <div class="content">
       <nav class="top-bar ">
                 <ul class="title-area">
                     <li class="name">
@@ -34,15 +35,15 @@
                         <li {{ action 'getInTouch' }}>{{#link-to 'getInTouch'}}Get in touch{{/link-to}}</li>
                         <li><a href="http://delighthq.com">Customer Login</a></li>
                         <ul class="sub-category">
-                        <hr>
-                        <li>{{#link-to 'CaseStudies' class="heading"}}Case studies{{/link-to}}</li>
-                        <li class="mob-tab">{{#link-to 'albums'}}The Albums{{/link-to}}</li>
-                        <li class="mob-tab">{{#link-to 'picquity'}}Picquity{{/link-to}}</li>
-                        <hr>
-                        <li>{{#link-to 'about' class="heading"}}About{{/link-to}}</li>
-                        <li class="mob-tab">{{#link-to 'aboutus'}}Who we are{{/link-to}}</li>
-                        <li class="mob-tab">{{#link-to 'faq'}}FAQ{{/link-to}}</li>
-                        <li class="mob-tab">{{#link-to 'location'}}Where we are{{/link-to}}</li>
+                            <hr>
+                            <li>{{#link-to 'CaseStudies' class="heading"}}Case studies{{/link-to}}</li>
+                            <li class="mob-tab">{{#link-to 'albums'}}The Albums{{/link-to}}</li>
+                            <li class="mob-tab">{{#link-to 'picquity'}}Picquity{{/link-to}}</li>
+                            <hr>
+                            <li>{{#link-to 'about' class="heading"}}About{{/link-to}}</li>
+                            <li class="mob-tab">{{#link-to 'aboutus'}}Who we are{{/link-to}}</li>
+                            <li class="mob-tab">{{#link-to 'faq'}}FAQ{{/link-to}}</li>
+                            <li class="mob-tab">{{#link-to 'location'}}Where we are{{/link-to}}</li>
                         </ul>
                     </ul>
                 </section>
@@ -72,6 +73,7 @@
       {{outlet faqSection}}
       {{outlet locationSection}}
       {{outlet footer}}
+    </div>
   </script>
 
 <!--index secction-->
@@ -79,7 +81,7 @@
     <!--content starts here-->
         <script type="text/x-handlebars" id="index">
           <section class="landingSection getHeight">
-                  <h1 class="mega">We help build startups.</h1>
+                  <div class="fade"><h1 class="mega">We help build startups.</h1></div>
                   <h3 class="delta text-center">We are a no-sweat technical partner for early stage entrepreneurs to launch ideas from scratch and for later stage startups to build more quickly and affordably.</h3>
 
                   <div class="row">
@@ -366,7 +368,7 @@
                     <div class="large-24 columns center-image">
                      <div class="large-11 large-centered columns">
                       <div class="center-images">
-                        <img src="images/case_study1.png">
+                        <img class="cs" src="images/case_study1.png">
                       </div>
                     </div>
                   </div>

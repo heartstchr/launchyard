@@ -7,17 +7,11 @@ $(document).ready(function(){
         $('.freeLandingPage .inviteBox ').css({
             position: 'absolute',
             bottom: 0
-        });
-
-    var $root = $('html, body');
-    $('#learnMore, .about, .location,.faqsection_tab').click(function() {
-        $root.animate({
-            scrollTop: $( $.attr(this, 'href') ).offset().top
-        }, 700);
-        return false;
-
-    });
+        });     
     }
+    $('menu-icon').click(function(){
+        $('..top-bar').css('height','auto');
+    });
     $('.recommend li').hover(
         function(){
             $('.recommend li[class="active"]').removeClass('active');

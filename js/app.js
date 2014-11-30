@@ -45,50 +45,36 @@ App.IndexRoute = Ember.Route.extend({
 		    }
 		  }
 	});
-
-	App.CaseStudiesController = Ember.Controller.extend({
-		actions: {
-		    down: function() {
-		      this._super();
-			$("html, body").animate({ scrollTop: $('#about').offset().top }, 1000);
-		    }
-		}	
-	});
-	App.CaseStudiesAboutController = Ember.Controller.extend({
-		actions: {
-		    down: function() {
-		      this._super();
-			$("html, body").animate({ scrollTop: $('#about').offset().top }, 1000);
-		    }
-		}	
-	});
-
-	App.IdeationSectionRoute = Ember.Route.extend({
-		renderTemplate: function(){
-	  	this.render('index',{outlet: 'index'});
-	  	this.render('ideationSection',{outlet: 'ideationSection'});
-	  	this.render('platformSection',{outlet: 'platformSection'});
-	  	this.render('featureSection',{outlet: 'featureSection'});
-	  	this.render('getInTouch',{outlet: 'getInTouch'});
-	  	this.render('clientSection',{outlet: 'clientSection'});
-	  	this.render('freeLandingPage',{outlet: 'freeLandingPage'});
-	  	this.render('achievementSection',{outlet: 'achievementSection'});
-	  	},
-	});
-
-
-	App.GetInTouchRoute = Ember.Route.extend({
-		renderTemplate: function(){
-	  	this.render('index',{outlet: 'index'});
-	  	this.render('ideationSection',{outlet: 'ideationSection'});
-	  	this.render('platformSection',{outlet: 'platformSection'});
-	  	this.render('featureSection',{outlet: 'featureSection'});
-	  	this.render('getInTouch',{outlet: 'getInTouch'});
-	  	this.render('clientSection',{outlet: 'clientSection'});
-	  	this.render('freeLandingPage',{outlet: 'freeLandingPage'});
-	  	this.render('achievementSection',{outlet: 'achievementSection'});
-	  	}
-	});
+		App.IndexView = Ember.View.extend({
+		    templateName: 'index',
+		    didInsertElement: function() {
+		        this.$(".fade").fadeIn(2000);
+		    }   
+		});
+		App.IdeationSectionRoute = Ember.Route.extend({
+			renderTemplate: function(){
+		  	this.render('index',{outlet: 'index'});
+		  	this.render('ideationSection',{outlet: 'ideationSection'});
+		  	this.render('platformSection',{outlet: 'platformSection'});
+		  	this.render('featureSection',{outlet: 'featureSection'});
+		  	this.render('getInTouch',{outlet: 'getInTouch'});
+		  	this.render('clientSection',{outlet: 'clientSection'});
+		  	this.render('freeLandingPage',{outlet: 'freeLandingPage'});
+		  	this.render('achievementSection',{outlet: 'achievementSection'});
+		  	},
+		});
+		App.GetInTouchRoute = Ember.Route.extend({
+			renderTemplate: function(){
+		  	this.render('index',{outlet: 'index'});
+		  	this.render('ideationSection',{outlet: 'ideationSection'});
+		  	this.render('platformSection',{outlet: 'platformSection'});
+		  	this.render('featureSection',{outlet: 'featureSection'});
+		  	this.render('getInTouch',{outlet: 'getInTouch'});
+		  	this.render('clientSection',{outlet: 'clientSection'});
+		  	this.render('freeLandingPage',{outlet: 'freeLandingPage'});
+		  	this.render('achievementSection',{outlet: 'achievementSection'});
+		  	}
+		});
 
 App.CaseStudiesRoute = Ember.Route.extend({
 	activate: function() {
@@ -100,15 +86,29 @@ App.CaseStudiesRoute = Ember.Route.extend({
   	this.render('footer',{outlet: 'footer'});
   	}
 });
-	
-	App.CaseStudiesAboutRoute = Ember.Route.extend({
+	App.CaseStudiesController = Ember.Controller.extend({
+		actions: {
+		    down: function() {
+		      this._super();
+			$("html, body").animate({ scrollTop: $('#about').offset().top }, 1000);
+		    }
+		}	
+	});
+App.CaseStudiesAboutRoute = Ember.Route.extend({
 		renderTemplate: function(){
 	  	this.render('content',{outlet: 'content'});
 	  	this.render('caseStudiesAbout',{outlet: 'caseStudiesAbout'});
 	  	this.render('footer',{outlet: 'footer'});
 	  	}
 	});
-
+	App.CaseStudiesAboutController = Ember.Controller.extend({
+		actions: {
+		    down: function() {
+		      this._super();
+			$("html, body").animate({ scrollTop: $('#about').offset().top }, 1000);
+		    }
+		}	
+	});
 		App.AlbumsRoute = Ember.Route.extend({
 			activate: function() {
 			    document.title = "Case Study: The Albums| LaunchYard - We help build startups.";
