@@ -5613,7 +5613,7 @@ pre code {
  * Dropcap Sass @include
  * Use the following Sass @include with any selector you feel necessary.
  *
-	@include dropcap($dropcap-float-position, $dropcap-font-size, $dropcap-font-family, $dropcap-txt-indent, $dropcap-margin, $dropcap-padding, $dropcap-color, $dropcap-line-height, $dropcap-bg);
+  @include dropcap($dropcap-float-position, $dropcap-font-size, $dropcap-font-family, $dropcap-txt-indent, $dropcap-margin, $dropcap-padding, $dropcap-color, $dropcap-line-height, $dropcap-bg);
  *
  * Extend this object into your custom stylesheet. Let the variables do the work.
  *
@@ -5721,7 +5721,7 @@ code {
 /**
  * Abbreviations Markup
  *
-	<abbr title="hyper text markup language">HMTL</abbr>
+  <abbr title="hyper text markup language">HMTL</abbr>
  *
  * Extend this object into your markup.
  *
@@ -5760,10 +5760,10 @@ p + .drop-cap, .blog-content-body ul li + .drop-cap {
 /**
  * Lining Definition Style Markup
  *
-	<dl class="lining">
-		<dt><b></b></dt>
-		<dd></dd>
-	</dl>
+  <dl class="lining">
+    <dt><b></b></dt>
+    <dd></dd>
+  </dl>
  *
  * Extend this object into your markup.
  *
@@ -5785,10 +5785,10 @@ p + .drop-cap, .blog-content-body ul li + .drop-cap {
 /**
  * Dictionary Definition Style Markup
  *
-	<dl class="dictionary-style">
-		<dt><b></b></dt>
-			<dd></dd>
-	</dl>
+  <dl class="dictionary-style">
+    <dt><b></b></dt>
+      <dd></dd>
+  </dl>
  *
  * Extend this object into your markup.
  *
@@ -5808,16 +5808,16 @@ p + .drop-cap, .blog-content-body ul li + .drop-cap {
 /**
  * Blockquote Markup
  *
-		<figure>
-			<blockquote cite="">
-				<p></p>
-			</blockquote>
-			<figcaption>
-				<cite>
-					<small><a href=""></a></small>
-				</cite>
-			</figcaption>
-		</figure>
+    <figure>
+      <blockquote cite="">
+        <p></p>
+      </blockquote>
+      <figcaption>
+        <cite>
+          <small><a href=""></a></small>
+        </cite>
+      </figcaption>
+    </figure>
  *
  * Extend this object into your markup.
  *
@@ -5825,11 +5825,11 @@ p + .drop-cap, .blog-content-body ul li + .drop-cap {
 /**
  * Pull Quotes Markup
  *
-	<aside class="pull-quote">
-		<blockquote>
-			<p></p>
-		</blockquote>
-	</aside>
+  <aside class="pull-quote">
+    <blockquote>
+      <p></p>
+    </blockquote>
+  </aside>
  *
  * Extend this object into your custom stylesheet.
  *
@@ -5855,11 +5855,11 @@ p + .drop-cap, .blog-content-body ul li + .drop-cap {
 /**
  * Figures Markup
  *
-	<figure>
-		<figcaption>
-			<strong>Fig. 4.2 | </strong>Type Anatomy, an excerpt from Mark Boulton's book<cite title="http://designingfortheweb.co.uk/book/part3/part3_chapter11.php">"Designing for the Web"</cite>
-		</figcaption>
-	</figure>
+  <figure>
+    <figcaption>
+      <strong>Fig. 4.2 | </strong>Type Anatomy, an excerpt from Mark Boulton's book<cite title="http://designingfortheweb.co.uk/book/part3/part3_chapter11.php">"Designing for the Web"</cite>
+    </figcaption>
+  </figure>
  *
  * Extend this object into your markup.
  *
@@ -5867,14 +5867,14 @@ p + .drop-cap, .blog-content-body ul li + .drop-cap {
 /**
  * Footnote Markup : Replace 'X' with your unique number for each footnote
  *
-	<article>
-		<p><sup><a href="#fn-itemX" id="fn-returnX"></a></sup></p>
-		<footer>
-			<ol class="foot-notes">
-				<li id="fn-itemX"><a href="#fn-returnX">↩</a></li>
-			</ol>
-		</footer>
-	</article>
+  <article>
+    <p><sup><a href="#fn-itemX" id="fn-returnX"></a></sup></p>
+    <footer>
+      <ol class="foot-notes">
+        <li id="fn-itemX"><a href="#fn-returnX">↩</a></li>
+      </ol>
+    </footer>
+  </article>
  *
  * Extend this object into your markup.
  *
@@ -5981,7 +5981,7 @@ h1, h2 {
     .top-bar-section ul li a:hover {
       color: white !important;
       background: none !important;
-      border-bottom: 2px #fff solid;
+      /*border-bottom: 2px #fff solid; added by jiwan*/
       line-height: 26px; }
 .top-bar-section ul .divider {
   border-right: none;
@@ -6352,7 +6352,8 @@ h1, h2 {
   background: #fff;
   border-radius: 3px;
   width: 75%;
-  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.15);
+  /*box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.15);*/
+  box-shadow: 0 15px 20px -15px rgb(203, 201, 201);
   border: 1px solid #FFF;
   padding: 2% 2% 2% 11%;
   margin: 0 auto;
@@ -6398,7 +6399,8 @@ h1, h2 {
   background: #fff;
   border-radius: 3px;
   width: 75%;
-  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.15);
+  /*box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.15);*/
+  box-shadow: 0 15px 20px -15px rgb(203, 201, 201);
   border: 1px solid #FFF;
   padding: 2% 10% 2% 2%; }
   .kartik h1 {
@@ -6521,39 +6523,45 @@ h1, h2 {
   padding-top: 10px; }
 
 .teamList ul li:nth-child(1):hover .bharath {
-  border: 5px #1d2630 solid;
+  border: 1px #1d2630 solid;
   position: relative;
   background-size: cover;
-  -webkit-background-size: cover; }
+  -webkit-background-size: cover;
+  border-radius: .5em; }/*added by jiwan*/
 
 .teamList ul li:nth-child(2):hover .naveen {
-  border: 5px #1d2630 solid;
+  border: 1px #1d2630 solid;
   position: relative;
   background-size: cover;
-  -webkit-background-size: cover; }
+  -webkit-background-size: cover; 
+border-radius: .5em;}
 
 .teamList ul li:nth-child(3):hover .Vivek {
-  border: 5px #1d2630 solid;
+  border: 1px #1d2630 solid;
   position: relative;
   background-size: cover;
-  -webkit-background-size: cover; }
+  -webkit-background-size: cover; 
+border-radius: .5em;}
 
 .teamList ul li:nth-child(5):hover .lucija {
-  border: 5px #1d2630 solid;
+  border: 1px #1d2630 solid;
   position: relative;
   background-size: cover;
-  -webkit-background-size: cover; }
+  -webkit-background-size: cover; 
+border-radius: .5em;}
 
 .teamList ul li:nth-of-type(n):hover .bharath {
-  border: 5px #1d2630 solid;
+  border: 1px #1d2630 solid;
   position: relative;
   background-size: cover;
-  -webkit-background-size: cover; }
+  -webkit-background-size: cover; 
+border-radius: .5em;}
 .teamList ul li:nth-of-type(n):hover .Shawn {
-  border: 5px #1d2630 solid;
+  border: 1px #1d2630 solid;
   position: relative;
   background-size: cover;
-  -webkit-background-size: cover; }
+  -webkit-background-size: cover; 
+border-radius: .5em;}
 
 .faqsection_tab {
   color: white;
@@ -7464,10 +7472,14 @@ footer {
       color: #000; }
 
 .case-thealbums {
-  border: 2px #087764 solid; }
+  border: 2px #087764 solid; 
+box-shadow: 0 -1px 10px 0px rgba(104, 182, 117, 1); /*added by jiwan*/
+}
 
 .case-picquity {
-  border: 2px #d9504a solid; }
+  border: 2px #d9504a solid;
+  box-shadow: 0 -1px 10px 0px rgba(194, 110, 110, 1);/*added by jiwan*/
+   }
 
 .case-stagebandit {
   border: 2px #000 solid; }
@@ -7721,3 +7733,41 @@ footer {
   font-family: 'QuicksandBold';
   src: url("../font/quicksand/quicksand-bold.eot");
   src: url("../font/quicksand/quicksand-bold.eot") format("embedded-opentype"), url("../font/quicksand/quicksand-bold.woff") format("woff"), url("../font/quicksand/quicksand-bold.ttf") format("truetype"), url("../font/quicksand/quicksand-bold.svg#QuicksandBold") format("svg"); }
+
+  /*added by jiwan*/
+
+.teamList>.small-block-grid-2{
+  box-shadow: 0 -1px 14px -1px rgb(207, 207, 207);
+  border: 1px solid rgb(195, 195, 195);
+}
+#about>.gamma:first-child{
+  box-shadow: 0 0px 6px 1px rgba(205, 202, 202, 0.8);
+}
+.top-bar-section ul li a {
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+}
+.top-bar-section ul li a:hover {
+  color: #fff;
+}
+
+.top-bar-section ul li a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+.top-bar-section ul li a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
