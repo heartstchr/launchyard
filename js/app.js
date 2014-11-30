@@ -129,7 +129,6 @@ App.CaseStudiesAboutRoute = Ember.Route.extend({
 		    this.render('picquityfooter', {outlet: 'picquityfooter'});
 		  }
 		});
-
 App.AboutRoute = Ember.Route.extend({
 	activate: function() {
 	    document.title = "About us | LaunchYard - We help launch startups.";

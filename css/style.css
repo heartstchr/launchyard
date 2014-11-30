@@ -5613,7 +5613,7 @@ pre code {
  * Dropcap Sass @include
  * Use the following Sass @include with any selector you feel necessary.
  *
-  @include dropcap($dropcap-float-position, $dropcap-font-size, $dropcap-font-family, $dropcap-txt-indent, $dropcap-margin, $dropcap-padding, $dropcap-color, $dropcap-line-height, $dropcap-bg);
+	@include dropcap($dropcap-float-position, $dropcap-font-size, $dropcap-font-family, $dropcap-txt-indent, $dropcap-margin, $dropcap-padding, $dropcap-color, $dropcap-line-height, $dropcap-bg);
  *
  * Extend this object into your custom stylesheet. Let the variables do the work.
  *
@@ -5721,7 +5721,7 @@ code {
 /**
  * Abbreviations Markup
  *
-  <abbr title="hyper text markup language">HMTL</abbr>
+	<abbr title="hyper text markup language">HMTL</abbr>
  *
  * Extend this object into your markup.
  *
@@ -5760,10 +5760,10 @@ p + .drop-cap, .blog-content-body ul li + .drop-cap {
 /**
  * Lining Definition Style Markup
  *
-  <dl class="lining">
-    <dt><b></b></dt>
-    <dd></dd>
-  </dl>
+	<dl class="lining">
+		<dt><b></b></dt>
+		<dd></dd>
+	</dl>
  *
  * Extend this object into your markup.
  *
@@ -5785,10 +5785,10 @@ p + .drop-cap, .blog-content-body ul li + .drop-cap {
 /**
  * Dictionary Definition Style Markup
  *
-  <dl class="dictionary-style">
-    <dt><b></b></dt>
-      <dd></dd>
-  </dl>
+	<dl class="dictionary-style">
+		<dt><b></b></dt>
+			<dd></dd>
+	</dl>
  *
  * Extend this object into your markup.
  *
@@ -5808,16 +5808,16 @@ p + .drop-cap, .blog-content-body ul li + .drop-cap {
 /**
  * Blockquote Markup
  *
-    <figure>
-      <blockquote cite="">
-        <p></p>
-      </blockquote>
-      <figcaption>
-        <cite>
-          <small><a href=""></a></small>
-        </cite>
-      </figcaption>
-    </figure>
+		<figure>
+			<blockquote cite="">
+				<p></p>
+			</blockquote>
+			<figcaption>
+				<cite>
+					<small><a href=""></a></small>
+				</cite>
+			</figcaption>
+		</figure>
  *
  * Extend this object into your markup.
  *
@@ -5825,11 +5825,11 @@ p + .drop-cap, .blog-content-body ul li + .drop-cap {
 /**
  * Pull Quotes Markup
  *
-  <aside class="pull-quote">
-    <blockquote>
-      <p></p>
-    </blockquote>
-  </aside>
+	<aside class="pull-quote">
+		<blockquote>
+			<p></p>
+		</blockquote>
+	</aside>
  *
  * Extend this object into your custom stylesheet.
  *
@@ -5855,11 +5855,11 @@ p + .drop-cap, .blog-content-body ul li + .drop-cap {
 /**
  * Figures Markup
  *
-  <figure>
-    <figcaption>
-      <strong>Fig. 4.2 | </strong>Type Anatomy, an excerpt from Mark Boulton's book<cite title="http://designingfortheweb.co.uk/book/part3/part3_chapter11.php">"Designing for the Web"</cite>
-    </figcaption>
-  </figure>
+	<figure>
+		<figcaption>
+			<strong>Fig. 4.2 | </strong>Type Anatomy, an excerpt from Mark Boulton's book<cite title="http://designingfortheweb.co.uk/book/part3/part3_chapter11.php">"Designing for the Web"</cite>
+		</figcaption>
+	</figure>
  *
  * Extend this object into your markup.
  *
@@ -5867,14 +5867,14 @@ p + .drop-cap, .blog-content-body ul li + .drop-cap {
 /**
  * Footnote Markup : Replace 'X' with your unique number for each footnote
  *
-  <article>
-    <p><sup><a href="#fn-itemX" id="fn-returnX"></a></sup></p>
-    <footer>
-      <ol class="foot-notes">
-        <li id="fn-itemX"><a href="#fn-returnX">↩</a></li>
-      </ol>
-    </footer>
-  </article>
+	<article>
+		<p><sup><a href="#fn-itemX" id="fn-returnX"></a></sup></p>
+		<footer>
+			<ol class="foot-notes">
+				<li id="fn-itemX"><a href="#fn-returnX">↩</a></li>
+			</ol>
+		</footer>
+	</article>
  *
  * Extend this object into your markup.
  *
@@ -7737,11 +7737,11 @@ box-shadow: 0 -1px 10px 0px rgba(104, 182, 117, 1); /*added by jiwan*/
   /*added by jiwan*/
 
 .teamList>.small-block-grid-2{
-  box-shadow: 0 -1px 14px -1px rgb(207, 207, 207);
-  border: 1px solid rgb(195, 195, 195);
+	box-shadow: 0 -1px 14px -1px rgb(207, 207, 207);
+	border: 1px solid rgb(195, 195, 195);
 }
 #about>.gamma:first-child{
-  box-shadow: 0 0px 6px 1px rgba(205, 202, 202, 0.8);
+	box-shadow: 0 0px 6px 1px rgba(205, 202, 202, 0.8);
 }
 .top-bar-section ul li a {
   position: relative;
